@@ -1,12 +1,14 @@
+import java.io.*;
+import java.nio.Buffer;
 import java.util.Scanner;
 
 public class principake {
 
     public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in);
+        lectureFichier fichier = new lectureFichier("C:\\Users\\Antoi\\Documents\\GitHub\\JeuVie2018\\exemple lif\\AATest.LIF");
 
-        lectureFichier.OuvertureFichier("");
+        System.out.println(fichier.ExtractionRegle());
     }
 
 }
