@@ -1,45 +1,123 @@
-public class listeSimplChainee {
+public class listeSimplChainee<T> {
 
-    private Maillon sommet = null;
+    Maillon<T> tete;
 
-    public listeSimplChainee(int x, int y){
-        sommet = new Maillon(x,y);
+    listeSimplChainee(){
+        tete = null;
     }
 
-    public boolean Existe(int x, int y){
-        Maillon m = sommet;
+    public void ajout(T v){
 
-        return false;
+        //Marche pas
 
-    }
+        if(!appartientListe(v)){
 
-    public boolean Ajout(int x, int y){
+            if(tete == null)
+                tete = new Maillon<T>(v,null);
+            else{
 
-        if(x >= 0 && y >= 0){
-            sommet.changementSuivant(new Maillon(x,y));
-            return true;
-        }
-
-        return false;
-    }
-
-    public boolean Retrait(int x, int y){
-
-        Maillon m = sommet;
-
-        if(x >= 0 && y >= 0){
-            while(m != null){
-                int[] pos = m.getPosition();
-
-                if(pos[0] == x && pos[1] == y){
-
-                }
             }
-            return false;
+        }
+
+        Maillon<T> m = tete.getSuivant();
+        Maillon<T> prec = tete;
+        Maillon<T> nouv = new Maillon<T>(v,null);
+
+        while(m != null){
+
+            int[] infoM = (int[]) m.getInfo();
+            int[] infoV = (int[]) m.getInfo();
+
+
+            if(infoM[1] < infoV[1] && infoM[0] < infoV[0]){
+                prec.setSuivant(nouv);
+                nouv.setSuivant(m);
+            }
+            else{
+                prec = m;
+                m = m.getSuivant();
+            }
+
+        }
+    }
+
+    public Maillon<T> teteListe(){
+        return tete;
+    }
+
+    public T elementTete(){
+        return tete.getInfo();
+    }
+
+    public boolean estListeVide(){
+        return (this.tete == null);
+    }
+
+    public boolean appartientListe(T x){
+        Maillon<T> m = tete;
+
+        while(m != null){
+            if(m.getInfo() == x) return true;
+            m = m.getSuivant();
         }
 
         return false;
-
     }
 
+    public listeSimplChainee<T> supprimer1oc(T x){
+
+        if(estListeVide()) return this;
+
+        if(tete.getInfo() == x){
+            tete = tete.getSuivant();
+            return this;
+        }
+
+        Maillon<T> m = tete.getSuivant();
+        Maillon<T> pre = tete;
+
+        while(m != null){
+
+            if(m.getInfo() == x){
+                pre.setSuivant(m.getSuivant());
+                return this;
+            }
+            else{
+                pre = m;
+                m = m.getSuivant();
+            }
+
+        }
+
+        return this;
+    }
+
+    public boolean equal(listeSimplChainee<T> l){
+        Maillon<T> m = tete;
+        Maillon<T> p = l.tete;
+
+        while(m != null){
+            if(m.getInfo() != p.getInfo()) return false;
+            m = m.getSuivant();
+            p = p.getSuivant();
+        }
+
+
+        return true;
+    }
+
+    public String toString(){
+        String s = "";
+
+        if(estListeVide()) return "vide";
+
+        Maillon<T> m = tete;
+
+        while(m != null){
+            s += m.toString();
+            m = m.getSuivant();
+        }
+
+        return s;
+    }
 }

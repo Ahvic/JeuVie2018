@@ -1,20 +1,46 @@
-public class Maillon {
+import java.util.Arrays;
 
-    private Maillon suivant;
-    private int[] position = new int[2];
+public class Maillon<T>{
 
-    public Maillon(int x, int y){
-        position[0] = x;
-        position[1] = y;
-        suivant = null;
+    private Maillon<T> suivant;
+    private T info;
+
+    public Maillon(T info, Maillon<T> suivant){
+       this.info = info;
+       this.suivant = suivant;
     }
 
-    public int[] getPosition() {
-        return position;
+    public Maillon<T> getSuivant() {
+        return suivant;
     }
 
-    public void changementSuivant(Maillon m){
-        suivant = m;
+    public void setSuivant(Maillon<T> suivant) {
+        this.suivant = suivant;
     }
 
+    public T getInfo() {
+        return info;
+    }
+
+    public void setInfo(T info) {
+        this.info = info;
+    }
+
+    public String toString(){
+
+        if(info instanceof int[]){
+            String res  = "(";
+            int[] m = (int[]) info;
+
+            for(int i = 0; i < m.length; i++)
+                if(i != m.length - 1)
+                    res += m[i] + ",";
+                else
+                    res += m[i];
+
+            return res + ")";
+        }
+
+        return info.toString();
+    }
 }
