@@ -29,6 +29,20 @@ public class Maillon{
         this.info = info;
     }
 
+    public boolean equalsValeur(int[] info) {
+
+        if(info.length == this.info.length){
+            for(int i = 0; i < this.info.length; i++){
+                if(this.info[i] != info[i])
+                    return false;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
     public String toString(){
 
         String res  = "(";

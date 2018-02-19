@@ -23,23 +23,6 @@ public class Principale {
 
         liste.ajout(coord2);
         System.out.println(liste.toString());
-
-        liste.ajout(coord3);
-        System.out.println(liste.toString());
-
-        liste.ajout(coord4);
-        System.out.println(liste.toString());
-
-        liste.ajout(coord5);
-        System.out.println(liste.toString());
-
-        liste.ajout(coord6);
-        System.out.println(liste.toString());
-
-        //liste.ajout(coord7);
-        //System.out.println(liste.toString());
-
-        //Probleme avec le cas de 0,0
     }
 
 }

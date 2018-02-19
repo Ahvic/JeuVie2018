@@ -16,8 +16,7 @@ public class LC{
         if(estVide())
             tete = nouv;
         else{
-
-            //Ne sait pas reconnaitre si l'élément existe déjà seulement quand on lui pose la question ici
+            //Le tri marche pas
 
             if(!appartientListe(v)){
 
@@ -54,7 +53,8 @@ public class LC{
         Maillon m = tete;
 
         while(m != null){
-            if(m.getInfo() == v) return true;
+
+            if(m.equalsValeur(v)) return true;
             m = m.getSuivant();
         }
 
