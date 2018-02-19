@@ -1,46 +1,44 @@
 import java.util.Arrays;
 
-public class Maillon<T>{
+public class Maillon{
 
-    private Maillon<T> suivant;
-    private T info;
+    private Maillon suivant;
+    private int[] info;
 
-    public Maillon(T info, Maillon<T> suivant){
+    public Maillon(int[] info, Maillon suivant){
+
+        if(info.length != 2 || info[0] < 0 || info[1] < 0 ) throw new IllegalArgumentException();
+
        this.info = info;
        this.suivant = suivant;
     }
 
-    public Maillon<T> getSuivant() {
+    public Maillon getSuivant() {
         return suivant;
     }
 
-    public void setSuivant(Maillon<T> suivant) {
+    public void setSuivant(Maillon suivant) {
         this.suivant = suivant;
     }
 
-    public T getInfo() {
+    public int[] getInfo() {
         return info;
     }
 
-    public void setInfo(T info) {
+    public void setInfo(int[] info) {
         this.info = info;
     }
 
     public String toString(){
 
-        if(info instanceof int[]){
-            String res  = "(";
-            int[] m = (int[]) info;
+        String res  = "(";
 
-            for(int i = 0; i < m.length; i++)
-                if(i != m.length - 1)
-                    res += m[i] + ",";
-                else
-                    res += m[i];
+        for(int i = 0; i < info.length; i++)
+            if(i != info.length - 1)
+                res += info[i] + ",";
+            else
+                res += info[i];
 
-            return res + ")";
-        }
-
-        return info.toString();
+        return res + ")";
     }
 }

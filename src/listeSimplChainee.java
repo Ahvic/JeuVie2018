@@ -1,5 +1,5 @@
 public class listeSimplChainee<T> {
-
+    /*
     Maillon<T> tete;
 
     listeSimplChainee(){
@@ -19,10 +19,13 @@ public class listeSimplChainee<T> {
             }
         }
 
-        Maillon<T> m = tete.getSuivant();
-        Maillon<T> prec = tete;
         Maillon<T> nouv = new Maillon<T>(v,null);
+        tete.setSuivant(nouv);
+        tete = nouv;
 
+        //Maillon<T> m = tete.getSuivant();
+        //Maillon<T> prec = tete;
+        /*
         while(m != null){
 
             int[] infoM = (int[]) m.getInfo();
@@ -39,6 +42,7 @@ public class listeSimplChainee<T> {
             }
 
         }
+
     }
 
     public Maillon<T> teteListe(){
@@ -120,4 +124,5 @@ public class listeSimplChainee<T> {
 
         return s;
     }
+    */
 }
