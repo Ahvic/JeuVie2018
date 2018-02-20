@@ -7,22 +7,8 @@ public class Principale {
 
         LC liste = new LC();
 
-        List<int[]> runtest = new ArrayList<>();
-
-        int[] coord1 = {3,1};
-        int[] coord2 = {1,2};
-        int[] coord3 = {1,3};
-        int[] coord4 = {1,1};
-        int[] coord5 = {1,5};
-        int[] coord6 = {2,1};
-        int[] coord7 = {0,0};
-
-
-        liste.ajout(coord1);
-        System.out.println(liste.toString());
-
-        liste.ajout(coord2);
-        System.out.println(liste.toString());
+        lectureFichier lf = new lectureFichier("C:\\Users\\Antoi\\Downloads\\exemple lif.tar\\exemple lif\\ACORN.LIF");
+        lf.ExtractionCellule();
     }
 
 }

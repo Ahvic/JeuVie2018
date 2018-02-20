@@ -16,10 +16,31 @@ public class lectureFichier {
         }
     }
 
-    public char[][] ConvertionFichier(){
-        char[][] res = null;
+    public LC ExtractionCellule(){
+        String info = ConvertionFichier();
+        LC res = new LC();
 
-        //Doit etre une liste chainée
+        int nbLigne = 0;
+
+        for(int i = 0; i < info.length(); i++)
+            if(info.charAt(i) == '\n')
+                nbLigne++;
+
+        System.out.println(nbLigne);
+
+        return res;
+    }
+
+    public String ConvertionFichier(){
+        String res = "";
+
+        try {
+            for (String line = br.readLine(); line != null; line = br.readLine()) {
+                res += line;
+            }
+        }catch (IOException e){
+            System.out.println(e);
+        }
 
         return res;
     }
@@ -32,7 +53,7 @@ public class lectureFichier {
      * @return la regle au format string
      */
 
-    public static String ExtractionRegle(){
+    public String ExtractionRegle(){
         String res = "23/3";
 
         //Deconne si on a une ligne avec un espace
