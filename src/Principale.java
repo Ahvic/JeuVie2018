@@ -7,21 +7,23 @@ public class Principale {
 
         LC liste = new LC();
 
-        List<int[]> runtest = new ArrayList<>();
-
-        int[] coord1 = {3,1};
-        int[] coord2 = {1,2};
-        int[] coord3 = {1,3};
-        int[] coord4 = {1,1};
-        int[] coord5 = {1,5};
-        int[] coord6 = {2,1};
-        int[] coord7 = {0,0};
+        lectureFichier fichier = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
+        //liste = fichier.ConvertionFichier();
 
 
-        liste.ajout(coord1);
-        System.out.println(liste.toString());
 
-        liste.ajout(coord2);
+        int[] n1 = {1,1};
+        int[] n2 = {1,2};
+        int[] n3 = {1,3};
+
+        liste.ajout(n1);
+        liste.ajout(n2);
+        liste.ajout(n3);
+        liste.ajout(n1);
+        liste.ajout(n2);
+        liste.ajout(n1);
+
+
         System.out.println(liste.toString());
     }
 

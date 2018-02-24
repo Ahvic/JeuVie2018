@@ -16,10 +16,36 @@ public class lectureFichier {
         }
     }
 
-    public char[][] ConvertionFichier(){
-        char[][] res = null;
+    public LC ConvertionFichier(){
+        LC res = new LC();
+        int offsetX = 0;
+        int offsetY = 0;
 
-        //Doit etre une liste chainée
+        try {
+            for (String line = br.readLine(); line != null; line = br.readLine()) {
+
+                if(line.charAt(0) == '#'){
+                    String[] decoupe = line.split(" ");
+
+                    if(decoupe[0].equals("#P")){
+                        offsetX = Integer.parseInt(decoupe[1]);
+                        offsetY = Integer.parseInt(decoupe[2]);
+                    }
+                }
+
+                else{
+                    for(int i = 0; i < line.length(); i++){
+                        if(line.charAt(i) == '*'){
+                            int[] temp = {i+offsetX, offsetY};
+                            res.ajout(temp);
+                        }
+                    }
+                    offsetY++;
+                }
+            }
+        }catch (IOException e){
+            e.toString();
+        }
 
         return res;
     }

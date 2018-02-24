@@ -13,40 +13,15 @@ public class LC{
     public boolean ajout(int[] v){
         Maillon nouv = new Maillon(v,null);
 
-        if(estVide())
+        if(estVide()) {
             tete = nouv;
+        }
         else{
-            //Le tri marche pas
-
-            if(!appartientListe(v)){
-
-                Maillon act = tete;
-                Maillon pre = null;
-
-                while(act != null){
-
-                    if(act.getInfo()[1] <= v[1] && act.getInfo()[0] <= v[0]){
-
-                        nouv.setSuivant(act);
-                        if(pre != null) pre.setSuivant(nouv);
-                        else tete = nouv;
-
-                        return true;
-                    }
-                    else{
-                        pre = act;
-                        act = act.getSuivant();
-                    }
-
-                }
-
-                nouv.setSuivant(tete);
-                tete = nouv;
-            }
-            return false;
+            nouv.setSuivant(tete);
+            tete = nouv;
         }
 
-        return false;
+        return true;
     }
 
     public boolean appartientListe(int[] v){
