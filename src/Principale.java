@@ -10,8 +10,7 @@ public class Principale {
         lectureFichier fichier = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
         liste = fichier.ConvertionFichier();
 
-
-        System.out.println(liste.toString());
+        System.out.println(liste.toStringTab());
     }
 
 }
