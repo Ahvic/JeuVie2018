@@ -7,8 +7,10 @@ public class Principale {
 
         LC liste = new LC();
 
-        lectureFichier lf = new lectureFichier("C:\\Users\\Antoi\\Downloads\\exemple lif.tar\\exemple lif\\ACORN.LIF");
-        lf.ExtractionCellule();
+        lectureFichier fichier = new lectureFichier("allo ?");
+        liste = fichier.ConvertionFichier();
+
+        System.out.println(liste.toStringTab());
     }
 
 }

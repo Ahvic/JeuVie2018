@@ -7,7 +7,8 @@ public class Maillon{
 
     public Maillon(int[] info, Maillon suivant){
 
-        if(info.length != 2 || info[0] < 0 || info[1] < 0 ) throw new IllegalArgumentException();
+        //Besoin de tout mettre en positif ou non ?
+        //if(info.length != 2 || info[0] < 0 || info[1] < 0 ) throw new IllegalArgumentException();
 
        this.info = info;
        this.suivant = suivant;
