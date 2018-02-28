@@ -1,78 +1,141 @@
-public class LC{
+import javafx.scene.control.Cell;
 
-    Maillon tete;
+public class LC<T> {
 
-    public LC(){
+    Maillon<T> tete;
+
+    LC(){
         tete = null;
     }
 
-    public boolean estVide(){
-        return tete == null;
+    public void ajoutEnTete(T v){
+        if(!appartientListe(v)) tete = new Maillon<T>(v, tete);
     }
 
-    public boolean ajout(int[] v){
-        Maillon nouv = new Maillon(v,null);
-
-        if(estVide()) {
-            tete = nouv;
-        }
-        else{
-            nouv.setSuivant(tete);
-            tete = nouv;
-        }
-
-        return true;
+    public Maillon<T> teteListe(){
+        return tete;
     }
 
-    public boolean appartientListe(int[] v){
-        Maillon m = tete;
+    public T elementTete(){
+        return tete.info;
+    }
+
+    public boolean estListeVide(){
+        return (this.tete == null);
+    }
+
+    public boolean appartientListe(T x){
+        Maillon<T> m = tete;
 
         while(m != null){
-
-            if(m.equalsValeur(v)) return true;
-            m = m.getSuivant();
+            if(m.info == x) return true;
+            m = m.suivant;
         }
 
         return false;
     }
 
-    public String toString(){
-        String res = "";
-        Maillon m = tete;
+    public LC<T> supprimer1oc(T x){
 
-        while(m != null){
-            res += m.toString();
-            m = m.getSuivant();
+        if(estListeVide()) return this;
+
+        if(tete.info == x){
+            tete = tete.suivant;
+            return this;
         }
 
-        return res;
+        Maillon<T> m = tete.suivant;
+        Maillon<T> pre = tete;
+
+        while(m != null){
+
+            if(m.info == x){
+                pre.suivant = m.suivant;
+                return this;
+            }
+            else{
+                pre = m;
+                m = m.suivant;
+            }
+
+        }
+
+        return this;
     }
 
-    public String toStringTab(){
-
-        //Deux itérations obligatoires ? L'un construit le tableau, l'autre cherche les valeurs
-        String res = "   ";
-        Maillon m = tete;
-        int[] info = tete.getInfo();
-
-        int minX = info[0];
-        int maxX = info[0];
-        int minY = info[1];
-        int maxY = info[1];
+    public boolean equal(LC<T> l){
+        Maillon<T> m = tete;
+        Maillon<T> p = l.tete;
 
         while(m != null){
-            int[] infoM = m.getInfo();
-
-            if(infoM[0] < minX) minX = infoM[0];
-            if(infoM[0] > maxX) maxX = infoM[0];
-            if(infoM[1] < minY) minY = infoM[1];
-            if(infoM[1] > maxY) maxY = infoM[1];
-
-            m = m.getSuivant();
+            if(m.info != p.info) return false;
+            m = m.suivant;
+            p = p.suivant;
         }
 
-        //Manque un gros truc
 
-        return res;
+        return true;
+    }
+
+    public String toString(){
+        String s = "";
+
+        if(estListeVide()) return s;
+
+        Maillon<T> m = tete;
+
+        while(m != null){
+
+            T info = m.info;
+
+            if(info instanceof Cellule){
+                s += "(" + ((Cellule) info).colonne + "," + ((Cellule) info).ligne + ")";
+            }
+            else{
+                s +=  m.info.toString() + "\n";
+            }
+
+            m = m.suivant;
+        }
+
+        return s;
+    }
+
+    /**
+     * Affiche la liste chainee sous la forme d'un tableau
+     *
+     * Marche pas
+     *
+     * @return le tableau
+     */
+
+    public String toStringTab(){
+        String s = "";
+
+        if(estListeVide()) return "Liste vide";
+
+        Maillon<T> m = tete;
+        Cellule pC = (Cellule) m.info;
+
+        while(m != null){
+            Cellule mC = (Cellule)m.info;
+
+            if((mC.ligne) != pC.ligne){
+                for(int i = 0; i < Math.abs(pC.ligne - mC.ligne); i++)
+                    s += "\n";
+            }
+
+            if(pC == mC) s += "*";
+            else{
+                for(int i = 0; i < Math.abs(pC.colonne - mC.colonne); i++)
+                    s += " ";
+                s += "*";
+            }
+
+            pC = mC;
+            m = m.suivant;
+        }
+
+        return s;
     }
 }

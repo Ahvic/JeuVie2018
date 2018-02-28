@@ -1,3 +1,5 @@
+import javafx.scene.control.Cell;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,10 +7,9 @@ public class Principale {
 
     public static void main(String[] Args){
 
-        LC liste = new LC();
+        LC<Cellule> liste = new LC();
 
-        lectureFichier fichier = new lectureFichier("allo ?");
-        liste = fichier.ConvertionFichier();
+        liste = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF").ConvertionFichier();
 
         System.out.println(liste.toStringTab());
     }

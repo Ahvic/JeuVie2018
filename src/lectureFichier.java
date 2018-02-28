@@ -16,8 +16,8 @@ public class lectureFichier {
         }
     }
 
-    public LC ConvertionFichier(){
-        LC res = new LC();
+    public LC<Cellule> ConvertionFichier(){
+        LC<Cellule> res = new LC();
         int offsetX = 0;
         int offsetY = 0;
 
@@ -36,8 +36,7 @@ public class lectureFichier {
                 else{
                     for(int i = 0; i < line.length(); i++){
                         if(line.charAt(i) == '*'){
-                            int[] temp = {i+offsetX, offsetY};
-                            res.ajout(temp);
+                            res.ajoutEnTete(new Cellule(i+offsetX, offsetY));
                         }
                     }
                     offsetY++;
@@ -54,7 +53,6 @@ public class lectureFichier {
      * Format de la règle : [survie]/[naissance]
      * 23 se lis 2 ou 3
      *
-     * @param br le fichier lif passé par OuverturFichier()
      * @return la regle au format string
      */
 
