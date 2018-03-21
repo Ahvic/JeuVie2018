@@ -9,9 +9,16 @@ public class Principale {
 
         LC<Cellule> liste = new LC();
 
-        liste = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF").ConvertionFichier();
+        liste = new lectureFichier("C:\\Users\\Antoi\\OneDrive\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF").ConvertionFichier();
 
-        System.out.println(liste.toStringTab());
+        System.out.println(liste.toString());
+
+        Cellule survivante = new Cellule(3,1);
+        Cellule omae = new Cellule(2,1);
+
+        Generation gen = new Generation();
+
+        System.out.println(gen.comptageVoisins(liste, omae));
     }
 
 }

@@ -1,5 +1,3 @@
-import javafx.scene.control.Cell;
-
 public class LC<T> {
 
     Maillon<T> tete;
