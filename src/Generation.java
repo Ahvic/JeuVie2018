@@ -1,3 +1,5 @@
+import javafx.scene.control.Cell;
+
 import java.lang.Math;
 
 public class Generation {
@@ -15,8 +17,6 @@ public class Generation {
                     if(c.colonne - info.colonne == 0){
                         if((Math.abs(c.ligne - info.ligne)) == 1) {
                             res++;
-
-                            System.out.println(info.ligne + " " + info.colonne);
                         }
                     }
                     else{
@@ -26,7 +26,6 @@ public class Generation {
 
                             if(dY == 1 || dY == 0){
                                 res++;
-                                System.out.println(info.ligne + " " + info.colonne);
                             }
                         }
                     }
@@ -38,5 +37,48 @@ public class Generation {
         }
 
         return res;
+    }
+
+    public LC Survivre(LC l, int[] x) {
+        Maillon m = l.tete;
+
+        while (m != null) {
+            for(int i = 0; i < x.length; i++){
+                boolean suppression = false;
+
+                if (comptageVoisins(l, ((Cellule) m.info)) == x[i]) {
+                    suppression = true;
+                }
+
+                if(suppression)
+                        l.supprimer1oc((Cellule) m.info);
+            }
+
+            m = m.suivant;
+        }
+
+        return l;
+    }
+
+    public LC naissance(LC l, int x){
+        LC<Cellule> dejaFait = new LC<Cellule>();
+        Maillon m = l.tete;
+
+        while (m != null){
+            for(int i = -1; i < 2; i++){
+                for(int j = -1; j < 2; j++){
+                    Cellule test = new Cellule(i, j);
+
+                    if(!l.appartientListe(test) && !dejaFait.appartientListe(test))
+
+                        if (comptageVoisins(l, test) == x)
+                            l.ajoutEnTete(test);
+
+                    dejaFait.ajoutEnTete(test);
+                }
+            }
+        }
+
+        return l;
     }
 }

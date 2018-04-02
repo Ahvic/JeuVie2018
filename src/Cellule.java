@@ -6,4 +6,8 @@ public class Cellule {
         this.colonne = colonne;
         this.ligne = ligne;
     }
+
+    public String toString(){
+        return "(" + colonne + "," + ligne + ")";
+    }
 }

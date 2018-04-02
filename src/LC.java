@@ -1,9 +1,43 @@
+import javafx.scene.control.Cell;
+
 public class LC<T> {
 
     Maillon<T> tete;
 
     LC(){
         tete = null;
+    }
+
+    public int minimumColonne(){
+        Maillon<T> m = tete;
+        int res = ((Cellule)(m.info)).colonne;
+
+        while(m != null){
+            int valeur = ((Cellule)(m.info)).colonne;
+
+            if(valeur < res)
+                res = valeur;
+
+            m = m.suivant;
+        }
+
+        return res;
+    }
+
+    public int minimum(){
+        Maillon<T> m = tete;
+        int res = ((Cellule)(m.info)).colonne;
+
+        while(m != null){
+            int valeur = ((Cellule)(m.info)).colonne;
+
+            if(valeur < res)
+                res = valeur;
+
+            m = m.suivant;
+        }
+
+        return res;
     }
 
     public void ajoutEnTete(T v){
@@ -94,6 +128,7 @@ public class LC<T> {
             }
 
             m = m.suivant;
+            System.out.println(s);
         }
 
         return s;
@@ -102,38 +137,82 @@ public class LC<T> {
     /**
      * Affiche la liste chainee sous la forme d'un tableau
      *
-     * Marche pas
+     * 2 parcours de la liste chainée et un d'un tableau, pas efficace
      *
      * @return le tableau
      */
 
-    public String toStringTab(){
-        String s = "";
+    public String affichageTableau(){
+        String res = "";
+        LC<String> l = new LC<String>();
+        Maillon m = tete;
+        Maillon pM = null;
+        int minColonne = ((Cellule)m.info).colonne;
 
-        if(estListeVide()) return "Liste vide";
+        //m ne change hors de la boucle que lorsqu'on change de ligne
+        while(m != null) {
 
-        Maillon<T> m = tete;
-        Cellule pC = (Cellule) m.info;
+            System.out.println(m.info + "dans la 1e boucle");
 
-        while(m != null){
-            Cellule mC = (Cellule)m.info;
+            Cellule info = (Cellule) m.info;
+            Cellule infoP = null;
+            String ligne = "";
 
-            if((mC.ligne) != pC.ligne){
-                for(int i = 0; i < Math.abs(pC.ligne - mC.ligne); i++)
-                    s += "\n";
+            if (minColonne > info.colonne) {
+                Maillon mL = l.tete;
+                int decalage = Math.abs(minColonne - info.colonne);
+                String ajout = "";
+
+                for (int i = 0; i < decalage; i++)
+                    ajout += ".";
+
+                while (mL != null) {
+                    mL.info = ajout + mL.info;
+                }
+
+                minColonne = info.colonne;
+            }
+            else {
+                int decalage = Math.abs(info.colonne - minColonne);
+
+                for (int i = 0; i < decalage; i++)
+                    ligne += ".";
             }
 
-            if(pC == mC) s += "*";
-            else{
-                for(int i = 0; i < Math.abs(pC.colonne - mC.colonne); i++)
-                    s += " ";
-                s += "*";
+            while (infoP == null || info.ligne == infoP.ligne) {
+                if (infoP != null) {
+                    int decalage = Math.abs(info.colonne - infoP.colonne) - 1;
+                    String ajout = "";
+
+                    for (int i = 0; i < decalage; i++)
+                        ajout += ".";
+
+                    ajout += "*";
+
+                } else {
+                    ligne += "*";
+                }
+
+                System.out.println(m.info + "dans la 2e boucle");
+
+                pM = m;
+                m = m.suivant;
+                info = (Cellule) m.info;
+                infoP = (Cellule) pM.info;
             }
 
-            pC = mC;
-            m = m.suivant;
+            l.ajoutEnTete(ligne);
         }
 
-        return s;
+        Maillon n = l.tete;
+
+        System.out.println("Marqueur 2");
+
+        while(n != null){
+            res += n.info + "\n";
+            n = n.suivant;
+        }
+
+        return res;
     }
 }
