@@ -1,5 +1,3 @@
-import javafx.scene.control.Cell;
-
 import java.lang.Math;
 
 public class Generation {

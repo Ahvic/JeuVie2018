@@ -1,4 +1,3 @@
-import javafx.scene.control.Cell;
 
 public class LC<T> {
 
@@ -137,80 +136,49 @@ public class LC<T> {
     /**
      * Affiche la liste chainee sous la forme d'un tableau
      *
-     * 2 parcours de la liste chainée et un d'un tableau, pas efficace
-     *
      * @return le tableau
      */
 
     public String affichageTableau(){
         String res = "";
-        LC<String> l = new LC<String>();
         Maillon m = tete;
-        Maillon pM = null;
-        int minColonne = ((Cellule)m.info).colonne;
+        Maillon pre = null;
 
-        //m ne change hors de la boucle que lorsqu'on change de ligne
-        while(m != null) {
-
-            System.out.println(m.info + "dans la 1e boucle");
-
-            Cellule info = (Cellule) m.info;
+        while(m != null){
+            Cellule info = (Cellule)m.info;
             Cellule infoP = null;
-            String ligne = "";
 
-            if (minColonne > info.colonne) {
-                Maillon mL = l.tete;
-                int decalage = Math.abs(minColonne - info.colonne);
-                String ajout = "";
+            if(pre == null){
+                res += "*";
+            }else{
+                infoP = (Cellule)pre.info;
+                int dX = infoP.colonne - info.colonne;
+                int dY = infoP.ligne - info.ligne;
 
-                for (int i = 0; i < decalage; i++)
-                    ajout += ".";
-
-                while (mL != null) {
-                    mL.info = ajout + mL.info;
+                //on ne prend en compte que le cas ou on remonte vu que la LC est trie
+                if(dY > 0){
+                    for(int i = dY; i > 0; i--)
+                        res += "\n";
                 }
 
-                minColonne = info.colonne;
-            }
-            else {
-                int decalage = Math.abs(info.colonne - minColonne);
-
-                for (int i = 0; i < decalage; i++)
-                    ligne += ".";
-            }
-
-            while (infoP == null || info.ligne == infoP.ligne) {
-                if (infoP != null) {
-                    int decalage = Math.abs(info.colonne - infoP.colonne) - 1;
-                    String ajout = "";
-
-                    for (int i = 0; i < decalage; i++)
-                        ajout += ".";
-
-                    ajout += "*";
-
-                } else {
-                    ligne += "*";
+                if(dX > 0){
+                    //Ajout a gauche
+                    for (int i = dX - 1; i > 0; i--)
+                        res = "." + res;
+                    res = "*" + res;
+                }else{
+                    //Ajout a droite
+                    for (int i = dX; i < 0; i++)
+                        res += ".";
+                    res += "*";
                 }
 
-                System.out.println(m.info + "dans la 2e boucle");
-
-                pM = m;
-                m = m.suivant;
-                info = (Cellule) m.info;
-                infoP = (Cellule) pM.info;
+                System.out.println("Act: " + info + " pre : " + infoP + "| dX :" + dX + " dY : " + dY);
+                System.out.println(res);
             }
 
-            l.ajoutEnTete(ligne);
-        }
-
-        Maillon n = l.tete;
-
-        System.out.println("Marqueur 2");
-
-        while(n != null){
-            res += n.info + "\n";
-            n = n.suivant;
+            pre = m;
+            m = m.suivant;
         }
 
         return res;
