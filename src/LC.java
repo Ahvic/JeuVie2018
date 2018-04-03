@@ -136,49 +136,80 @@ public class LC<T> {
     /**
      * Affiche la liste chainee sous la forme d'un tableau
      *
+     * Marche mais degeu
+     *
      * @return le tableau
      */
 
     public String affichageTableau(){
-        String res = "";
         Maillon m = tete;
         Maillon pre = null;
+        LC<LigneAfficheur> mem = new LC<LigneAfficheur>();
+        String ligneAct = "";
+        Cellule info = (Cellule)m.info;
+        Cellule infoP = null;
+        int minMem = info.colonne;
 
         while(m != null){
-            Cellule info = (Cellule)m.info;
-            Cellule infoP = null;
+            info = (Cellule)m.info;
+            infoP = null;
 
             if(pre == null){
-                res += "*";
+                ligneAct += "*";
             }else{
                 infoP = (Cellule)pre.info;
                 int dX = infoP.colonne - info.colonne;
                 int dY = infoP.ligne - info.ligne;
 
-                //on ne prend en compte que le cas ou on remonte vu que la LC est trie
+                //Passage a la ligne suivante
                 if(dY > 0){
-                    for(int i = dY; i > 0; i--)
-                        res += "\n";
+                    for(int i = dY; i > 0; i--) {
+                        mem.ajoutEnTete(new LigneAfficheur(ligneAct, infoP.colonne));
+                        ligneAct = "";
+                        dX = 1;
+                        if(infoP.colonne < minMem)
+                            minMem = infoP.colonne;
+                    }
                 }
 
+                //Creation de la ligne
                 if(dX > 0){
                     //Ajout a gauche
                     for (int i = dX - 1; i > 0; i--)
-                        res = "." + res;
-                    res = "*" + res;
+                        ligneAct = " " + ligneAct;
+                    ligneAct = "*" + ligneAct;
                 }else{
                     //Ajout a droite
                     for (int i = dX; i < 0; i++)
-                        res += ".";
-                    res += "*";
+                        ligneAct += " ";
+                    ligneAct += "*";
                 }
-
-                System.out.println("Act: " + info + " pre : " + infoP + "| dX :" + dX + " dY : " + dY);
-                System.out.println(res);
             }
 
             pre = m;
             m = m.suivant;
+        }
+
+        mem.ajoutEnTete(new LigneAfficheur(ligneAct, info.colonne));
+        if(info != null){
+            if(info.colonne < minMem)
+                minMem = info.colonne;
+        }
+
+        Maillon n = mem.tete;
+
+        String res = "";
+
+        while (n != null){
+            LigneAfficheur l = (LigneAfficheur) n.info;
+            int decalage = Math.abs(minMem - l.minimum);
+
+            for(int i = 0; i < decalage; i++){
+                res += " ";
+            }
+
+            res += l.contenu + "\n";
+            n = n.suivant;
         }
 
         return res;
