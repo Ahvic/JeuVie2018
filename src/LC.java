@@ -43,6 +43,37 @@ public class LC<T> {
         if(!appartientListe(v)) tete = new Maillon<T>(v, tete);
     }
 
+    public void ajout(T v){
+        if(!appartientListe(v)){
+            Maillon m = tete;
+            Maillon pre = null;
+            Cellule c = (Cellule)v;
+            Maillon ma = new Maillon(c, null);
+
+            while(m != null){
+                Cellule info = (Cellule)m.info;
+
+                if(c.ligne > info.ligne || (c.ligne == info.ligne && c.colonne > info.colonne)) {
+                    if (pre == null) {
+                        tete = ma;
+                        ma.suivant = m;
+                    } else {
+                        pre.suivant = ma;
+                        ma.suivant = m;
+                    }
+
+                    break;
+                }
+
+                pre = m;
+                m = m.suivant;
+
+                if(m == null)
+                    pre.suivant = ma;
+            }
+        }
+    }
+
     public Maillon<T> teteListe(){
         return tete;
     }
@@ -120,14 +151,13 @@ public class LC<T> {
             T info = m.info;
 
             if(info instanceof Cellule){
-                s += "(" + ((Cellule) info).colonne + "," + ((Cellule) info).ligne + ")";
+                s += info.toString();
             }
             else{
                 s +=  m.info.toString() + "\n";
             }
 
             m = m.suivant;
-            System.out.println(s);
         }
 
         return s;

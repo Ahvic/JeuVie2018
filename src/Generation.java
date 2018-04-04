@@ -11,7 +11,8 @@ public class Generation {
         Cellule info = (Cellule)m.info;
 
         while(m!= null){
-                if(m.info instanceof Cellule) {
+                info = (Cellule)m.info;
+
                     if(c.colonne - info.colonne == 0){
                         if((Math.abs(c.ligne - info.ligne)) == 1) {
                             res++;
@@ -26,13 +27,12 @@ public class Generation {
                                 res++;
                             }
                         }
-                    }
-                }
-                m = m.suivant;
 
-                if(m != null)
-                    info = (Cellule)m.info;
+                    }
+                m = m.suivant;
         }
+
+        System.out.println(c + " voisins : " + res);
 
         return res;
     }
