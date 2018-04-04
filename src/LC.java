@@ -1,4 +1,3 @@
-import javafx.scene.control.Cell;
 
 public class LC<T> {
 
@@ -137,79 +136,79 @@ public class LC<T> {
     /**
      * Affiche la liste chainee sous la forme d'un tableau
      *
-     * 2 parcours de la liste chainée et un d'un tableau, pas efficace
+     * Marche mais degeu
      *
      * @return le tableau
      */
 
     public String affichageTableau(){
-        String res = "";
-        LC<String> l = new LC<String>();
         Maillon m = tete;
-        Maillon pM = null;
-        int minColonne = ((Cellule)m.info).colonne;
+        Maillon pre = null;
+        LC<LigneAfficheur> mem = new LC<LigneAfficheur>();
+        String ligneAct = "";
+        Cellule info = (Cellule)m.info;
+        Cellule infoP = null;
+        int minMem = info.colonne;
 
-        //m ne change hors de la boucle que lorsqu'on change de ligne
-        while(m != null) {
+        while(m != null){
+            info = (Cellule)m.info;
+            infoP = null;
 
-            System.out.println(m.info + "dans la 1e boucle");
+            if(pre == null){
+                ligneAct += "*";
+            }else{
+                infoP = (Cellule)pre.info;
+                int dX = infoP.colonne - info.colonne;
+                int dY = infoP.ligne - info.ligne;
 
-            Cellule info = (Cellule) m.info;
-            Cellule infoP = null;
-            String ligne = "";
-
-            if (minColonne > info.colonne) {
-                Maillon mL = l.tete;
-                int decalage = Math.abs(minColonne - info.colonne);
-                String ajout = "";
-
-                for (int i = 0; i < decalage; i++)
-                    ajout += ".";
-
-                while (mL != null) {
-                    mL.info = ajout + mL.info;
+                //Passage a la ligne suivante
+                if(dY > 0){
+                    for(int i = dY; i > 0; i--) {
+                        mem.ajoutEnTete(new LigneAfficheur(ligneAct, infoP.colonne));
+                        ligneAct = "";
+                        dX = 1;
+                        if(infoP.colonne < minMem)
+                            minMem = infoP.colonne;
+                    }
                 }
 
-                minColonne = info.colonne;
-            }
-            else {
-                int decalage = Math.abs(info.colonne - minColonne);
-
-                for (int i = 0; i < decalage; i++)
-                    ligne += ".";
-            }
-
-            while (infoP == null || info.ligne == infoP.ligne) {
-                if (infoP != null) {
-                    int decalage = Math.abs(info.colonne - infoP.colonne) - 1;
-                    String ajout = "";
-
-                    for (int i = 0; i < decalage; i++)
-                        ajout += ".";
-
-                    ajout += "*";
-
-                } else {
-                    ligne += "*";
+                //Creation de la ligne
+                if(dX > 0){
+                    //Ajout a gauche
+                    for (int i = dX - 1; i > 0; i--)
+                        ligneAct = " " + ligneAct;
+                    ligneAct = "*" + ligneAct;
+                }else{
+                    //Ajout a droite
+                    for (int i = dX; i < 0; i++)
+                        ligneAct += " ";
+                    ligneAct += "*";
                 }
-
-                System.out.println(m.info + "dans la 2e boucle");
-
-                pM = m;
-                m = m.suivant;
-                info = (Cellule) m.info;
-                infoP = (Cellule) pM.info;
             }
 
-            l.ajoutEnTete(ligne);
+            pre = m;
+            m = m.suivant;
         }
 
-        Maillon n = l.tete;
+        mem.ajoutEnTete(new LigneAfficheur(ligneAct, info.colonne));
+        if(info != null){
+            if(info.colonne < minMem)
+                minMem = info.colonne;
+        }
 
-        System.out.println("Marqueur 2");
+        Maillon n = mem.tete;
 
-        while(n != null){
-            res += n.info + "\n";
+        String res = "";
+
+        while (n != null){
+            LigneAfficheur l = (LigneAfficheur) n.info;
+            int decalage = Math.abs(minMem - l.minimum);
+
+            for(int i = 0; i < decalage; i++){
+                res += " ";
+            }
+
+            res += l.contenu + "\n";
             n = n.suivant;
         }
 
