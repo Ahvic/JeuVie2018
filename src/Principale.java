@@ -1,39 +1,21 @@
-import javafx.scene.control.Cell;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Principale {
 
     public static void main(String[] Args){
 
         LC<Cellule> liste = new LC();
+        Generation generation = new Generation();
+        liste = new lectureFichier("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif\\PI.LIF").ConvertionFichier();
 
-        liste = new lectureFichier("C:\\Users\\Antoi\\OneDrive\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF").ConvertionFichier();
-
-        /*
-        Cellule c1 = new Cellule(0,2);
-        Cellule c2 = new Cellule(2,0);
-        Cellule c3 = new Cellule(0,0);
-        Cellule c4 = new Cellule(-2,0);
-        Cellule c5 = new Cellule(0,-2);
-
-        liste.ajoutEnTete(c1);
-        liste.ajoutEnTete(c2);
-        liste.ajoutEnTete(c3);
-        liste.ajoutEnTete(c4);
-        liste.ajoutEnTete(c5);
-        */
-
-        //System.out.println(liste.toStringTab());
         System.out.println(liste.affichageTableau());
+        System.out.println(generation.birth(liste, 2).affichageTableau());
 
-        /*
-        String m = "c";
+       /* Maillon m = liste.tete;
 
-        m = "b" + "\n" + m;
-
-        System.out.println(m);
+        while(m != null){
+            System.out.print((Cellule)m.info);
+            m = m.suivant;
+        }
         */
     }
 

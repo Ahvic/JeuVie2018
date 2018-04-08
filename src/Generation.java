@@ -1,4 +1,4 @@
-import javafx.scene.control.Cell;
+import javafx.scene.control.TableColumn;
 
 import java.lang.Math;
 
@@ -60,23 +60,34 @@ public class Generation {
         return l;
     }
 
-    public LC naissance(LC l, int x){
-        LC<Cellule> dejaFait = new LC<Cellule>();
+    public LC birth (LC l, int x){
+        LC<Cellule> done = new LC<Cellule>();
         Maillon m = l.tete;
-
+        int a = 0;
         while (m != null){
-            for(int i = -1; i < 2; i++){
-                for(int j = -1; j < 2; j++){
-                    Cellule test = new Cellule(i, j);
+            Cellule cell = (Cellule)m.info;
+            System.out.println(cell.toString());
+            System.out.println(comptageVoisins(l, cell));
+            for(int i = -1; i < 1; i++){
+                for(int j = -1; j < 1; j++){
+                    Cellule neighbour = new Cellule(cell.colonne + i, cell.ligne + j);
+                    //System.out.println(neighbour.toString());
+                    //System.out.println(comptageVoisins(l, neighbour));
+                    if (i == 0 && j == 0) continue;
 
-                    if(!l.appartientListe(test) && !dejaFait.appartientListe(test))
+                    if(!l.appartientListe(neighbour) && !done.appartientListe(neighbour)){
+                        if (comptageVoisins(l, neighbour) == x) {
+                            done.ajoutEnTete(neighbour);
+                            l.ajoutEnTete(neighbour);
+                            a ++;
+                        }
+                    }
 
-                        if (comptageVoisins(l, test) == x)
-                            l.ajoutEnTete(test);
 
-                    dejaFait.ajoutEnTete(test);
+
                 }
             }
+            m = m.suivant;
         }
 
         return l;
