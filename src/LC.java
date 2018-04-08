@@ -206,12 +206,12 @@ public class LC<T> {
                 if(dX > 0){
                     //Ajout a gauche
                     for (int i = dX - 1; i > 0; i--)
-                        ligneAct = " " + ligneAct;
+                        ligneAct = "." + ligneAct;
                     ligneAct = "*" + ligneAct;
                 }else{
                     //Ajout a droite
                     for (int i = dX; i < 0; i++)
-                        ligneAct += " ";
+                        ligneAct += ".";
                     ligneAct += "*";
                 }
             }
@@ -235,7 +235,7 @@ public class LC<T> {
             int decalage = Math.abs(minMem - l.minimum);
 
             for(int i = 0; i < decalage; i++){
-                res += " ";
+                res += ".";
             }
 
             res += l.contenu + "\n";
