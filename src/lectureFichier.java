@@ -23,23 +23,22 @@ public class lectureFichier {
 
         try {
             for (String line = br.readLine(); line != null; line = br.readLine()) {
+                if(!line.equals("")) {
+                    if (line.charAt(0) == '#') {
+                        String[] decoupe = line.split(" ");
 
-                if(line.charAt(0) == '#'){
-                    String[] decoupe = line.split(" ");
-
-                    if(decoupe[0].equals("#P")){
-                        offsetX = Integer.parseInt(decoupe[1]);
-                        offsetY = Integer.parseInt(decoupe[2]);
-                    }
-                }
-
-                else{
-                    for(int i = 0; i < line.length(); i++){
-                        if(line.charAt(i) == '*'){
-                            res.ajoutEnTete(new Cellule(i+offsetX, offsetY));
+                        if (decoupe[0].equals("#P")) {
+                            offsetX = Integer.parseInt(decoupe[1]);
+                            offsetY = Integer.parseInt(decoupe[2]);
                         }
+                    } else {
+                        for (int i = 0; i < line.length(); i++) {
+                            if (line.charAt(i) == '*') {
+                                res.ajoutEnTete(new Cellule(i + offsetX, offsetY));
+                            }
+                        }
+                        offsetY++;
                     }
-                    offsetY++;
                 }
             }
         }catch (IOException e){
@@ -63,8 +62,9 @@ public class lectureFichier {
 
         try{
             for(String ligne = br.readLine(); ligne != null; ligne = br.readLine()){
-                if(ligne.charAt(1) == 'R')
+                if(ligne.charAt(1) == 'R') {
                     res = ligne.substring(3);
+                }
             }
         }catch(IOException e){
             e.toString();
