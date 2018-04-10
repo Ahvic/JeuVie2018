@@ -3,16 +3,22 @@ import java.io.*;
 
 public class lectureFichier {
 
-    private static BufferedReader br = null;
+    private BufferedReader br;
 
     public lectureFichier(String nom){
         try {
             File fichier = new File(nom);
             FileReader fr = new FileReader(fichier);
-            br = new BufferedReader((fr));
+            br = new BufferedReader(fr);
+
+            try{
+                br.mark(20000);
+            }catch(IOException e){
+
+            }
 
         }catch(FileNotFoundException e) {
-            e.toString();
+            System.out.println("Le fichier indique n'existe pas");
         }
     }
 
@@ -21,8 +27,15 @@ public class lectureFichier {
         int offsetX = 0;
         int offsetY = 0;
 
+        try{
+            br.reset();
+        }catch(IOException e){
+            System.out.println(e.toString());
+        }
+
         try {
             for (String line = br.readLine(); line != null; line = br.readLine()) {
+
                 if(!line.equals("")) {
                     if (line.charAt(0) == '#') {
                         String[] decoupe = line.split(" ");
@@ -55,19 +68,27 @@ public class lectureFichier {
      * @return la regle au format string
      */
 
-    public static String ExtractionRegle(){
+    public String ExtractionRegle(){
         String res = "23/3";
 
-        //Deconne si on a une ligne avec un espace
+        try{
+            br.reset();
+        }catch(IOException e){
+            System.out.println(e.toString());
+        }
 
         try{
-            for(String ligne = br.readLine(); ligne != null; ligne = br.readLine()){
-                if(ligne.charAt(1) == 'R') {
+            for(String ligne = br.readLine(); ligne != null; ligne = br.readLine()) {
+                if(ligne.startsWith("#N"))
+                    break;
+
+                if(ligne.startsWith("#R")){
                     res = ligne.substring(3);
+                    break;
                 }
             }
         }catch(IOException e){
-            e.toString();
+            System.out.println(e.toString());
         }
 
         return res;

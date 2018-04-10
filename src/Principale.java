@@ -7,10 +7,15 @@ public class Principale {
 
     public static void main(String[] Args){
 
-        LC<Cellule> liste = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF").ConvertionFichier();
-        Generation g = new Generation();
+        lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
+        LC<Cellule> liste = lF.ConvertionFichier();
 
-        deroulementJeu(liste, 100);
+        Generation g = new Generation(lF.ExtractionRegle());
+
+        System.out.println(liste.affichageTableau());
+        System.out.println(liste);
+
+        //System.out.println(lF.ExtractionRegle());
     }
 
     public static void deroulementJeu(LC l, final int LimiteGeneration){
