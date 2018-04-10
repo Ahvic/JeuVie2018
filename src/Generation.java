@@ -17,6 +17,7 @@ public class Generation {
                     if(c.colonne - info.colonne == 0){
                         if((Math.abs(c.ligne - info.ligne)) == 1) {
                             res++;
+                            System.out.print(info.toString());
                         }
                     }
                     else{
@@ -26,6 +27,7 @@ public class Generation {
 
                             if(dY == 1 || dY == 0){
                                 res++;
+                                System.out.print(info.toString());
                             }
                         }
                     }
@@ -64,17 +66,18 @@ public class Generation {
         LC<Cellule> done = new LC<Cellule>();
         Maillon m = l.tete;
         int a = 0;
+        int b = 0;
         while (m != null){
             Cellule cell = (Cellule)m.info;
-            System.out.println(cell.toString());
-            System.out.println(comptageVoisins(l, cell));
-            for(int i = -1; i < 1; i++){
-                for(int j = -1; j < 1; j++){
+            //System.out.println(cell.toString());
+            //System.out.println("nombre de voisins : " + comptageVoisins(l, cell));
+            for(int i = -1; i < 2; i++){
+                for(int j = -1; j < 2; j++){
                     Cellule neighbour = new Cellule(cell.colonne + i, cell.ligne + j);
-                    //System.out.println(neighbour.toString());
-                    //System.out.println(comptageVoisins(l, neighbour));
+                    System.out.println("cellule : " + neighbour.toString());
+                    System.out.println("voisins : " + comptageVoisins(l, neighbour));
                     if (i == 0 && j == 0) continue;
-
+                    if (done.appartientListe(neighbour)) b++;
                     if(!l.appartientListe(neighbour) && !done.appartientListe(neighbour)){
                         if (comptageVoisins(l, neighbour) == x) {
                             done.ajoutEnTete(neighbour);
@@ -89,7 +92,7 @@ public class Generation {
             }
             m = m.suivant;
         }
-
+        System.out.println(b);
         return l;
     }
 }

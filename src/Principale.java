@@ -8,7 +8,7 @@ public class Principale {
         liste = new lectureFichier("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif\\PI.LIF").ConvertionFichier();
 
         System.out.println(liste.affichageTableau());
-        System.out.println(generation.birth(liste, 2).affichageTableau());
+        System.out.println(generation.birth(liste, 2));
 
        /* Maillon m = liste.tete;
 
