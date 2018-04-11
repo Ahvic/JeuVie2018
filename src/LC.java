@@ -7,40 +7,42 @@ public class LC<T> {
         tete = null;
     }
 
-    public int minimumColonne(){
-        Maillon<T> m = tete;
-        int res = ((Cellule)(m.info)).colonne;
-
-        while(m != null){
-            int valeur = ((Cellule)(m.info)).colonne;
-
-            if(valeur < res)
-                res = valeur;
-
-            m = m.suivant;
-        }
-
-        return res;
-    }
-
-    public int minimum(){
-        Maillon<T> m = tete;
-        int res = ((Cellule)(m.info)).colonne;
-
-        while(m != null){
-            int valeur = ((Cellule)(m.info)).colonne;
-
-            if(valeur < res)
-                res = valeur;
-
-            m = m.suivant;
-        }
-
-        return res;
-    }
-
     public void ajoutEnTete(T v){
         if(!appartientListe(v)) tete = new Maillon<T>(v, tete);
+    }
+
+    public void ajout(T v){
+        if(!appartientListe(v)){
+            Maillon m = tete;
+            Maillon pre = null;
+            Cellule c = (Cellule)v;
+            Maillon ma = new Maillon(c, null);
+
+            if(m == null)
+                tete = ma;
+
+            while(m != null){
+                Cellule info = (Cellule)m.info;
+
+                if(c.ligne > info.ligne || (c.ligne == info.ligne && c.colonne > info.colonne)) {
+                    if (pre == null) {
+                        tete = ma;
+                        ma.suivant = m;
+                    } else {
+                        pre.suivant = ma;
+                        ma.suivant = m;
+                    }
+
+                    break;
+                }
+
+                pre = m;
+                m = m.suivant;
+
+                if(m == null)
+                    pre.suivant = ma;
+            }
+        }
     }
 
     public void ajout(T v){
@@ -141,7 +143,7 @@ public class LC<T> {
             T info = m.info;
 
             if(info instanceof Cellule){
-                s += "(" + ((Cellule) info).colonne + "," + ((Cellule) info).ligne + ")";
+                s += info.toString();
             }
             else{
                 s +=  m.info.toString() + "\n";
@@ -196,12 +198,20 @@ public class LC<T> {
                 if(dX > 0){
                     //Ajout a gauche
                     for (int i = dX - 1; i > 0; i--)
+<<<<<<< HEAD
                         ligneAct = " " + ligneAct;
+=======
+                        ligneAct = "." + ligneAct;
+>>>>>>> 0a3f41ac3f90af7418a21d60c84cd6a1f7bd3c6e
                     ligneAct = "*" + ligneAct;
                 }else{
                     //Ajout a droite
                     for (int i = dX; i < 0; i++)
+<<<<<<< HEAD
                         ligneAct += " ";
+=======
+                        ligneAct += ".";
+>>>>>>> 0a3f41ac3f90af7418a21d60c84cd6a1f7bd3c6e
                     ligneAct += "*";
                 }
             }
@@ -225,7 +235,11 @@ public class LC<T> {
             int decalage = Math.abs(minMem - l.minimum);
 
             for(int i = 0; i < decalage; i++){
+<<<<<<< HEAD
                 res += " ";
+=======
+                res += ".";
+>>>>>>> 0a3f41ac3f90af7418a21d60c84cd6a1f7bd3c6e
             }
 
             res += l.contenu + "\n";
