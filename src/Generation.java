@@ -5,6 +5,7 @@ public class Generation {
     private String regle;
     private int[] regleSurvie;
     private int[] regleNaissance;
+    LC<LC<Cellule>> genPreced = new LC<>();
 
     public Generation(String valeur){
         regle = valeur;
@@ -30,6 +31,21 @@ public class Generation {
 
     public String getRegle(){
         return regle;
+    }
+
+    public LC getGenPreced(){
+        return genPreced;
+    }
+
+    public void ajoutGenPreced(LC l){
+        genPreced.ajoutEnTete(l);
+    }
+
+    public LC generationSuivante(LC l){
+        l = Survivre(l);
+        //l = birth(l);
+        genPreced.ajoutEnTete(l);
+        return l;
     }
 
     //Fonctionne
@@ -66,6 +82,7 @@ public class Generation {
 
         return res;
     }
+
 
     public LC Survivre(LC l) {
         int[] x = {};
@@ -120,5 +137,17 @@ public class Generation {
         }
 
         return l;
+    }
+
+    public String detectionEvolution(LC l){
+        String res = "Pas d'evolution particulere";
+
+        if(l.estListeVide()) return "Mort";
+
+        if(!genPreced.estListeVide()) {
+            if (l.equal(genPreced.tete.info)) return "Stable";
+        }
+
+        return res;
     }
 }

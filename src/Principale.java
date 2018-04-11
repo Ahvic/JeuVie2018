@@ -1,21 +1,21 @@
 import java.io.*;
 import javax.swing.Timer;
 import java.awt.event.*;
-import java.awt.Event;
 
 public class Principale {
 
     public static void main(String[] Args){
 
         lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
-        LC<Cellule> liste = lF.ConvertionFichier();
-
         Generation g = new Generation(lF.ExtractionRegle());
 
-        System.out.println(liste.affichageTableau());
-        System.out.println(liste);
+        LC<Cellule> liste = lF.ConvertionFichier();
 
-        //System.out.println(lF.ExtractionRegle());
+        Cellule c1 = new Cellule(2,5);
+
+        //liste.ajout(c1);
+
+        System.out.println(liste.appartientListe(c1));
     }
 
     public static void deroulementJeu(LC l, final int LimiteGeneration){
@@ -30,6 +30,7 @@ public class Principale {
 
                 //Calcul generation suivante
                 //Detection etat stable
+                //Ajout de la generation dans genPreced de Generation
                 //System.out.println(l.affichageTableau());
                 nbGeneration++;
 

@@ -7,38 +7,6 @@ public class LC<T> {
         tete = null;
     }
 
-    public int minimumColonne(){
-        Maillon<T> m = tete;
-        int res = ((Cellule)(m.info)).colonne;
-
-        while(m != null){
-            int valeur = ((Cellule)(m.info)).colonne;
-
-            if(valeur < res)
-                res = valeur;
-
-            m = m.suivant;
-        }
-
-        return res;
-    }
-
-    public int minimum(){
-        Maillon<T> m = tete;
-        int res = ((Cellule)(m.info)).colonne;
-
-        while(m != null){
-            int valeur = ((Cellule)(m.info)).colonne;
-
-            if(valeur < res)
-                res = valeur;
-
-            m = m.suivant;
-        }
-
-        return res;
-    }
-
     public void ajoutEnTete(T v){
         if(!appartientListe(v)) tete = new Maillon<T>(v, tete);
     }
@@ -49,6 +17,9 @@ public class LC<T> {
             Maillon pre = null;
             Cellule c = (Cellule)v;
             Maillon ma = new Maillon(c, null);
+
+            if(m == null)
+                tete = ma;
 
             while(m != null){
                 Cellule info = (Cellule)m.info;
