@@ -61,11 +61,20 @@ public class LC<T> {
         Maillon<T> m = tete;
 
         while(m != null){
-            if(m.info == x) return true;
+
+            if(x instanceof Cellule && m.info instanceof Cellule) {
+                Cellule info = (Cellule)m.info;
+
+                if((info.colonne == ((Cellule) x).colonne && info.ligne == ((Cellule) x).ligne)) return true;
+            }else {
+                if (m.info == x) return true;
+                m = m.suivant;
+            }
+
             m = m.suivant;
         }
 
-        return false;
+        return  false;
     }
 
     public LC<T> supprimer1oc(T x){

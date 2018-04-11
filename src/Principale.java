@@ -6,15 +6,16 @@ public class Principale {
 
     public static void main(String[] Args){
 
-        lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
+        lectureFichier lF = new lectureFichier("C:\\Users\\Antoi\\Documents\\JeuVie2018\\exemple lif\\PI.LIF");
         Generation g = new Generation(lF.ExtractionRegle());
 
         LC<Cellule> liste = lF.ConvertionFichier();
 
-        Cellule c1 = new Cellule(2,5);
+        Cellule c1 = new Cellule(5,4);
 
         //liste.ajout(c1);
 
+        System.out.println(liste);
         System.out.println(liste.appartientListe(c1));
     }
 
