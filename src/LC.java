@@ -80,7 +80,7 @@ public class LC<T> {
         Maillon<T> m = tete;
 
         while(m != null){
-            if(m.info == x) return true;
+            if((Cellule)m.info.equals(x)) return true;
             m = m.suivant;
         }
 

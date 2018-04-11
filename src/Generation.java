@@ -17,7 +17,7 @@ public class Generation {
                     if(c.colonne - info.colonne == 0){
                         if((Math.abs(c.ligne - info.ligne)) == 1) {
                             res++;
-                            System.out.print(info.toString());
+                            //System.out.print(info.toString());
                         }
                     }
                     else{
@@ -27,7 +27,7 @@ public class Generation {
 
                             if(dY == 1 || dY == 0){
                                 res++;
-                                System.out.print(info.toString());
+                                //System.out.print(info.toString());
                             }
                         }
                     }
@@ -74,17 +74,21 @@ public class Generation {
             for(int i = -1; i < 2; i++){
                 for(int j = -1; j < 2; j++){
                     Cellule neighbour = new Cellule(cell.colonne + i, cell.ligne + j);
-                    System.out.println("cellule : " + neighbour.toString());
-                    System.out.println("voisins : " + comptageVoisins(l, neighbour));
-                    if (i == 0 && j == 0) continue;
-                    if (done.appartientListe(neighbour)) b++;
+                    //System.out.println("cellule : " + neighbour.toString());
+                    //System.out.println("voisins : " + comptageVoisins(l, neighbour));
+
+                    System.out.println(cell + " " + neighbour + " " + l.appartientListe(neighbour));
+
+                    if (l.appartientListe(neighbour)) b++;
+
+                    /*if (i == 0 && j == 0) continue;
                     if(!l.appartientListe(neighbour) && !done.appartientListe(neighbour)){
                         if (comptageVoisins(l, neighbour) == x) {
                             done.ajoutEnTete(neighbour);
                             l.ajoutEnTete(neighbour);
                             a ++;
                         }
-                    }
+                    } */
 
 
 

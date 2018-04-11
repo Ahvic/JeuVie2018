@@ -10,4 +10,11 @@ public class Cellule {
     public String toString(){
         return "(" + colonne + "," + ligne + ")";
     }
+
+    public boolean equals (Cellule cell){
+        if (colonne == cell.colonne){
+            return (ligne == cell.ligne);
+        }
+        return false;
+    }
 }

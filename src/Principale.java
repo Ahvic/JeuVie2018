@@ -7,9 +7,14 @@ public class Principale {
         Generation generation = new Generation();
         liste = new lectureFichier("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif\\PI.LIF").ConvertionFichier();
 
-        System.out.println(liste.affichageTableau());
-        System.out.println(generation.birth(liste, 2));
+        System.out.println(liste.toString());
+        //System.out.println(generation.birth(liste, 2));
 
+        Cellule test = new Cellule(5,4);
+
+        liste.ajout(test);
+
+        System.out.println(liste.appartientListe(test));
        /* Maillon m = liste.tete;
 
         while(m != null){
