@@ -50,7 +50,7 @@ public class Generation {
 
     //Fonctionne
 
-    public int comptageVoisins(LC l, Cellule c){
+    public int comptageVoisins(LC l, LC n, Cellule c){
         int res = 0;
 
         Maillon m = l.tete;
@@ -58,18 +58,20 @@ public class Generation {
 
         while(m!= null){
                 if(m.info instanceof Cellule) {
-                    if(c.colonne - info.colonne == 0){
+                    if(c.colonne - info.colonne == 0 && !n.appartientListe((Cellule)m.info)){
                         if((Math.abs(c.ligne - info.ligne)) == 1) {
                             res++;
+                            //System.out.println(info.toString());
                         }
                     }
                     else{
-                        if(Math.abs(c.colonne - info.colonne) == 1){
+                        if(Math.abs(c.colonne - info.colonne) == 1 && !n.appartientListe((Cellule)m.info)){
 
                             int dY = Math.abs(c.ligne - info.ligne);
 
                             if(dY == 1 || dY == 0){
                                 res++;
+                                //System.out.println(info.toString());
                             }
                         }
                     }
@@ -87,12 +89,12 @@ public class Generation {
     public LC Survivre(LC l) {
         int[] x = {};
         Maillon m = l.tete;
-
+        LC<Cellule> n = new LC<>();
         while (m != null) {
             for(int i = 0; i < x.length; i++){
                 boolean suppression = false;
 
-                if (comptageVoisins(l, ((Cellule) m.info)) == x[i]) {
+                if (comptageVoisins(l, n, ((Cellule) m.info)) == x[i]) {
                     suppression = true;
                 }
 
@@ -106,36 +108,36 @@ public class Generation {
         return l;
     }
 
-    public LC birth (LC l, int x){
-        LC<Cellule> done = new LC<Cellule>();
+    public  LC neighbours (LC l){
+        LC<Cellule> n = new LC<>();
         Maillon m = l.tete;
-        int a = 0;
         while (m != null){
             Cellule cell = (Cellule)m.info;
-            System.out.println(cell.toString());
-            System.out.println(comptageVoisins(l, cell));
-            for(int i = -1; i < 1; i++){
-                for(int j = -1; j < 1; j++){
+            for(int i = -1; i < 2; i++){
+                for(int j = -1; j < 2; j++){
                     Cellule neighbour = new Cellule(cell.colonne + i, cell.ligne + j);
-                    //System.out.println(neighbour.toString());
-                    //System.out.println(comptageVoisins(l, neighbour));
                     if (i == 0 && j == 0) continue;
 
-                    if(!l.appartientListe(neighbour) && !done.appartientListe(neighbour)){
-                        if (comptageVoisins(l, neighbour) == x) {
-                            done.ajoutEnTete(neighbour);
-                            l.ajoutEnTete(neighbour);
-                            a ++;
-                        }
+                    if(!l.appartientListe(neighbour) && !n.appartientListe(neighbour)){
+                        n.ajout(neighbour);
+                        //System.out.println(neighbour);
                     }
-
-
-
                 }
             }
             m = m.suivant;
         }
-
+        return n;
+    }
+    public LC nextGen (LC l, LC n, int x){
+        Maillon m = n.tete;
+        while (m!= null){
+            Cellule cell = (Cellule)m.info;
+            //System.out.println("cellule : " +cell + "voisins : ");
+            if (comptageVoisins(l, n, cell) == x){
+                l.ajout(cell);
+            }
+            m = m.suivant;
+        }
         return l;
     }
 

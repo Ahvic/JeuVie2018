@@ -68,13 +68,12 @@ public class LC<T> {
                 if((info.colonne == ((Cellule) x).colonne && info.ligne == ((Cellule) x).ligne)) return true;
             }else {
                 if (m.info == x) return true;
-                m = m.suivant;
             }
 
             m = m.suivant;
         }
 
-        return  false;
+        return false;
     }
 
     public LC<T> supprimer1oc(T x){
