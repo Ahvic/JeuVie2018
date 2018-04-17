@@ -7,6 +7,33 @@ public class LC<T> {
         tete = null;
     }
 
+    public LC<T> copie(){
+        LC<T> res = new LC();
+
+        Maillon m = tete;
+
+        while(m != null){
+            res.ajout((T)m.info);
+
+            m = m.suivant;
+        }
+
+        return res;
+    }
+
+    public void fusion(LC<T> l){
+        Maillon m = l.tete;
+
+        while(m != null){
+            T info = (T)m.info;
+
+            if(!appartientListe(info))
+                ajout(info);
+
+            m = m.suivant;
+        }
+    }
+
     public void ajoutEnTete(T v){
         if(!appartientListe(v)) tete = new Maillon<T>(v, tete);
     }
@@ -45,27 +72,6 @@ public class LC<T> {
         }
     }
 
-    public void ajout(T v){
-        if(!appartientListe(v)){
-            Maillon m = tete;
-            Maillon pre = null;
-            Cellule c = (Cellule)v;
-            Maillon ma = new Maillon(c, null);
-
-            while(m != null){
-                Cellule info = (Cellule)m.info;
-
-                if(c.ligne > info.colonne || c.colonne > info.colonne)
-                    if(pre == null)
-                        ma.suivant = m;
-                    
-
-                pre = m;
-                m = m.suivant;
-            }
-        }
-    }
-
     public Maillon<T> teteListe(){
         return tete;
     }
@@ -79,11 +85,21 @@ public class LC<T> {
     }
 
     public boolean appartientListe(T x){
-        Maillon<T> m = tete;
+        if(!estListeVide()) {
+            Maillon<T> m = tete;
 
-        while(m != null){
-            if((Cellule)m.info.equals(x)) return true;
-            m = m.suivant;
+            while (m != null) {
+
+                if (x instanceof Cellule && m.info instanceof Cellule) {
+                    Cellule info = (Cellule) m.info;
+
+                    if ((info.colonne == ((Cellule) x).colonne && info.ligne == ((Cellule) x).ligne)) return true;
+                } else {
+                    if (m.info == x) return true;
+                }
+
+                m = m.suivant;
+            }
         }
 
         return false;
@@ -198,20 +214,12 @@ public class LC<T> {
                 if(dX > 0){
                     //Ajout a gauche
                     for (int i = dX - 1; i > 0; i--)
-<<<<<<< HEAD
-                        ligneAct = " " + ligneAct;
-=======
                         ligneAct = "." + ligneAct;
->>>>>>> 0a3f41ac3f90af7418a21d60c84cd6a1f7bd3c6e
                     ligneAct = "*" + ligneAct;
                 }else{
                     //Ajout a droite
                     for (int i = dX; i < 0; i++)
-<<<<<<< HEAD
-                        ligneAct += " ";
-=======
                         ligneAct += ".";
->>>>>>> 0a3f41ac3f90af7418a21d60c84cd6a1f7bd3c6e
                     ligneAct += "*";
                 }
             }
@@ -235,11 +243,7 @@ public class LC<T> {
             int decalage = Math.abs(minMem - l.minimum);
 
             for(int i = 0; i < decalage; i++){
-<<<<<<< HEAD
-                res += " ";
-=======
                 res += ".";
->>>>>>> 0a3f41ac3f90af7418a21d60c84cd6a1f7bd3c6e
             }
 
             res += l.contenu + "\n";
