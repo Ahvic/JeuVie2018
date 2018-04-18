@@ -7,6 +7,33 @@ public class LC<T> {
         tete = null;
     }
 
+    public LC<T> copie(){
+        LC<T> res = new LC();
+
+        Maillon m = tete;
+
+        while(m != null){
+            res.ajout((T)m.info);
+
+            m = m.suivant;
+        }
+
+        return res;
+    }
+
+    public void fusion(LC<T> l){
+        Maillon m = l.tete;
+
+        while(m != null){
+            T info = (T)m.info;
+
+            if(!appartientListe(info))
+                ajout(info);
+
+            m = m.suivant;
+        }
+    }
+
     public void ajoutEnTete(T v){
         if(!appartientListe(v)) tete = new Maillon<T>(v, tete);
     }
@@ -58,23 +85,24 @@ public class LC<T> {
     }
 
     public boolean appartientListe(T x){
-        Maillon<T> m = tete;
+        if(!estListeVide()) {
+            Maillon<T> m = tete;
 
-        while(m != null){
+            while (m != null) {
 
-            if(x instanceof Cellule && m.info instanceof Cellule) {
-                Cellule info = (Cellule)m.info;
+                if (x instanceof Cellule && m.info instanceof Cellule) {
+                    Cellule info = (Cellule) m.info;
 
-                if((info.colonne == ((Cellule) x).colonne && info.ligne == ((Cellule) x).ligne)) return true;
-            }else {
-                if (m.info == x) return true;
+                    if ((info.colonne == ((Cellule) x).colonne && info.ligne == ((Cellule) x).ligne)) return true;
+                } else {
+                    if (m.info == x) return true;
+                }
+
                 m = m.suivant;
             }
-
-            m = m.suivant;
         }
 
-        return  false;
+        return false;
     }
 
     public LC<T> supprimer1oc(T x){
@@ -156,7 +184,9 @@ public class LC<T> {
         Maillon pre = null;
         LC<LigneAfficheur> mem = new LC<LigneAfficheur>();
         String ligneAct = "";
-        Cellule info = (Cellule)m.info;
+        Cellule info = null;
+        if(m != null)
+            info = (Cellule)m.info;
         Cellule infoP = null;
         int minMem = info.colonne;
 

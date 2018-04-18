@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.Arrays;
 
 public class Generation {
 
@@ -48,8 +49,6 @@ public class Generation {
         return l;
     }
 
-    //Fonctionne
-
     public int comptageVoisins(LC l, Cellule c){
         int res = 0;
 
@@ -57,19 +56,54 @@ public class Generation {
         Cellule info = (Cellule)m.info;
 
         while(m!= null){
-                if(m.info instanceof Cellule) {
-                    if(c.colonne - info.colonne == 0){
-                        if((Math.abs(c.ligne - info.ligne)) == 1) {
+            if(m.info instanceof Cellule) {
+                if(c.colonne - info.colonne == 0){
+                    if((Math.abs(c.ligne - info.ligne)) == 1) {
+                        res++;
+                    }
+                }
+                else{
+                    if(Math.abs(c.colonne - info.colonne) == 1){
+
+                        int dY = Math.abs(c.ligne - info.ligne);
+
+                        if(dY == 1 || dY == 0){
                             res++;
                         }
                     }
+                }
+            }
+            m = m.suivant;
+
+            if(m != null)
+                info = (Cellule)m.info;
+        }
+
+        return res;
+    }
+
+    public int comptageVoisins(LC l, LC n, Cellule c){
+        int res = 0;
+
+        Maillon m = l.tete;
+        Cellule info = (Cellule)m.info;
+
+        while(m!= null){
+                if(m.info instanceof Cellule) {
+                    if(c.colonne - info.colonne == 0 && !n.appartientListe((Cellule)m.info)){
+                        if((Math.abs(c.ligne - info.ligne)) == 1) {
+                            res++;
+                            //System.out.println(info.toString());
+                        }
+                    }
                     else{
-                        if(Math.abs(c.colonne - info.colonne) == 1){
+                        if(Math.abs(c.colonne - info.colonne) == 1 && !n.appartientListe((Cellule)m.info)){
 
                             int dY = Math.abs(c.ligne - info.ligne);
 
                             if(dY == 1 || dY == 0){
                                 res++;
+                                //System.out.println(info.toString());
                             }
                         }
                     }
@@ -85,62 +119,79 @@ public class Generation {
 
 
     public LC Survivre(LC l) {
-        int[] x = {};
         Maillon m = l.tete;
+        LC res = l.copie();
 
         while (m != null) {
-            for(int i = 0; i < x.length; i++){
-                boolean suppression = false;
+            int nbVoisin = comptageVoisins(l,((Cellule) m.info));
+            boolean suppression = true;
 
-                if (comptageVoisins(l, ((Cellule) m.info)) == x[i]) {
-                    suppression = true;
+            for(int i = 0; i < regleSurvie.length; i++){
+
+                if (nbVoisin == regleSurvie[i])
+                    suppression = false;
+
+
+                if(suppression) {
+                    res.supprimer1oc((Cellule) m.info);
+                    break;
                 }
-
-                if(suppression)
-                        l.supprimer1oc((Cellule) m.info);
             }
 
             m = m.suivant;
         }
 
-        return l;
+        return res;
     }
 
-    public LC birth (LC l, int x){
-        LC<Cellule> done = new LC<Cellule>();
+    public  LC neighbours (LC l){
+        LC<Cellule> n = new LC<>();
         Maillon m = l.tete;
-        int a = 0;
         while (m != null){
             Cellule cell = (Cellule)m.info;
-            System.out.println(cell.toString());
-            System.out.println(comptageVoisins(l, cell));
-            for(int i = -1; i < 1; i++){
-                for(int j = -1; j < 1; j++){
+            for(int i = -1; i < 2; i++){
+                for(int j = -1; j < 2; j++){
                     Cellule neighbour = new Cellule(cell.colonne + i, cell.ligne + j);
-                    //System.out.println(neighbour.toString());
-                    //System.out.println(comptageVoisins(l, neighbour));
                     if (i == 0 && j == 0) continue;
 
-                    if(!l.appartientListe(neighbour) && !done.appartientListe(neighbour)){
-                        if (comptageVoisins(l, neighbour) == x) {
-                            done.ajoutEnTete(neighbour);
-                            l.ajoutEnTete(neighbour);
-                            a ++;
-                        }
+                    if(!l.appartientListe(neighbour) && !n.appartientListe(neighbour)){
+                        n.ajout(neighbour);
+                        //System.out.println(neighbour);
                     }
-
-
-
                 }
             }
             m = m.suivant;
         }
+        return n;
+    }
+
+    //L'argument x est deja dans la classe avec RegleNaissance
+    //Naissance avant survit
+    //Pas encore teste
+    public LC nextGen (LC l, LC n, int x){
+
+        Maillon m = n.tete;
+
+        //Rajoute les cellules qui doivent naitrent
+        LC<Cellule> nouvCell = new LC<>();
+
+        while(m!= null){
+            Cellule cell = (Cellule)m.info;
+            //System.out.println("cellule : " + cell + "voisins : ");
+            if (comptageVoisins(l, n, cell) == x){
+                nouvCell.ajout(cell);
+            }
+            m = m.suivant;
+        }
+
+        l = Survivre(l);
+        l.fusion(nouvCell);
 
         return l;
     }
 
     public String detectionEvolution(LC l){
-        String res = "Pas d'evolution particulere";
+        String res = "Pas d'evolution particuliere";
 
         if(l.estListeVide()) return "Mort";
 

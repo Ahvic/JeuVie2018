@@ -6,17 +6,18 @@ public class Principale {
 
     public static void main(String[] Args){
 
-        lectureFichier lF = new lectureFichier("C:\\Users\\Antoi\\Documents\\JeuVie2018\\exemple lif\\PI.LIF");
+        lectureFichier lF = new lectureFichier("C:\\Users\\Antoi\\Documents\\JeuVie2018\\exemple lif\\AATest.LIF");
         Generation g = new Generation(lF.ExtractionRegle());
 
         LC<Cellule> liste = lF.ConvertionFichier();
 
-        Cellule c1 = new Cellule(5,4);
+        System.out.println(liste.affichageTableau());
 
-        //liste.ajout(c1);
+        while(true) {
+            liste = g.nextGen(liste, g.neighbours(liste), 3);
+            System.out.println(liste.affichageTableau());
+        }
 
-        System.out.println(liste);
-        System.out.println(liste.appartientListe(c1));
     }
 
     public static void deroulementJeu(LC l, final int LimiteGeneration){
