@@ -6,33 +6,23 @@ public class Principale {
 
     public static void main(String[] Args){
 
-        lectureFichier lF = new lectureFichier("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif\\PI.LIF");
+        lectureFichier lF = new lectureFichier("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif\\RELAY.LIF");
         Generation g = new Generation(lF.ExtractionRegle());
 
         LC<Cellule> liste = lF.ConvertionFichier();
 
-        Cellule c1 = new Cellule(2,2);
-
-
-        //liste.ajout(c1);
-
-
         System.out.println(liste.affichageTableau());
-        /*
-        Maillon m = g.nextGen(liste, g.neighbours(liste), 2).tete;
-        while (m != null){
-            System.out.println("cellule : " + (Cellule)m.info + "voisins :");
-            //g.comptageVoisins(liste, (Cellule)m.info);
-            if (g.comptageVoisins(liste, (Cellule)m.info) == 2){
-                System.out.println(g.comptageVoisins(liste, (Cellule)m.info));
-            }
-            m = m.suivant;
-        }
-        */
-        System.out.println(g.nextGen(liste, g.neighbours(liste), 2).affichageTableau());
 
+        //Cellule c = new Cellule(0,0);
+
+        //System.out.println(g.Survivre(liste));
+        //System.out.println(g.comptageVoisins(liste, c));
+        while (true){
+            liste = g.nextGen(liste, g.neighbours(liste), 3);
+            System.out.println(liste.affichageTableau());
+        }
     }
-    /*
+
     public static void deroulementJeu(LC l, final int LimiteGeneration){
 
         //Erreur de compilation si on met l'actionListener directement lors de la declaration
@@ -64,5 +54,4 @@ public class Principale {
 
         t.stop();
     }
-    */
 }

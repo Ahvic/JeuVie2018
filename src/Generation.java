@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.Arrays;
 
 public class Generation {
 
@@ -48,7 +49,38 @@ public class Generation {
         return l;
     }
 
-    //Fonctionne
+    public int comptageVoisins(LC l, Cellule c){
+        int res = 0;
+
+        Maillon m = l.tete;
+        Cellule info = (Cellule)m.info;
+
+        while(m!= null){
+            if(m.info instanceof Cellule) {
+                if(c.colonne - info.colonne == 0){
+                    if((Math.abs(c.ligne - info.ligne)) == 1) {
+                        res++;
+                    }
+                }
+                else{
+                    if(Math.abs(c.colonne - info.colonne) == 1){
+
+                        int dY = Math.abs(c.ligne - info.ligne);
+
+                        if(dY == 1 || dY == 0){
+                            res++;
+                        }
+                    }
+                }
+            }
+            m = m.suivant;
+
+            if(m != null)
+                info = (Cellule)m.info;
+        }
+
+        return res;
+    }
 
     public int comptageVoisins(LC l, LC n, Cellule c){
         int res = 0;
@@ -87,25 +119,29 @@ public class Generation {
 
 
     public LC Survivre(LC l) {
-        int[] x = {};
         Maillon m = l.tete;
-        LC<Cellule> n = new LC<>();
+        LC res = l.copie();
+
         while (m != null) {
-            for(int i = 0; i < x.length; i++){
-                boolean suppression = false;
+            int nbVoisin = comptageVoisins(l,((Cellule) m.info));
+            boolean suppression = true;
 
-                if (comptageVoisins(l, n, ((Cellule) m.info)) == x[i]) {
-                    suppression = true;
+            for(int i = 0; i < regleSurvie.length; i++){
+
+                if (nbVoisin == regleSurvie[i])
+                    suppression = false;
+
+
+                if(suppression) {
+                    res.supprimer1oc((Cellule) m.info);
+                    break;
                 }
-
-                if(suppression)
-                        l.supprimer1oc((Cellule) m.info);
             }
 
             m = m.suivant;
         }
 
-        return l;
+        return res;
     }
 
     public  LC neighbours (LC l){
@@ -128,21 +164,34 @@ public class Generation {
         }
         return n;
     }
+
+    //L'argument x est deja dans la classe avec RegleNaissance
+    //Naissance avant survit
+    //Pas encore teste
     public LC nextGen (LC l, LC n, int x){
+
         Maillon m = n.tete;
-        while (m!= null){
+
+        //Rajoute les cellules qui doivent naitrent
+        LC<Cellule> nouvCell = new LC<>();
+
+        while(m!= null){
             Cellule cell = (Cellule)m.info;
-            //System.out.println("cellule : " +cell + "voisins : ");
+            //System.out.println("cellule : " + cell + "voisins : ");
             if (comptageVoisins(l, n, cell) == x){
-                l.ajout(cell);
+                nouvCell.ajout(cell);
             }
             m = m.suivant;
         }
+
+        l = Survivre(l);
+        l.fusion(nouvCell);
+
         return l;
     }
 
     public String detectionEvolution(LC l){
-        String res = "Pas d'evolution particulere";
+        String res = "Pas d'evolution particuliere";
 
         if(l.estListeVide()) return "Mort";
 
