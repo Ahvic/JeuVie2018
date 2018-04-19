@@ -39,36 +39,33 @@ public class LC<T> {
     }
 
     public void ajout(T v){
-        if(!appartientListe(v)){
-            Maillon m = tete;
-            Maillon pre = null;
-            Cellule c = (Cellule)v;
-            Maillon ma = new Maillon(c, null);
+        Maillon m = tete;
+        Maillon pre = null;
+        Cellule c = (Cellule)v;
+        Maillon ma = new Maillon(c, null);
+
+        if(m == null)
+            tete = ma;
+
+        while(m != null){
+            Cellule info = (Cellule)m.info;
+
+            if(c.ligne > info.ligne || (c.ligne == info.ligne && c.colonne > info.colonne)) {
+                if (pre == null) {
+                    tete = ma;
+                    ma.suivant = m;
+                } else {
+                    pre.suivant = ma;
+                    ma.suivant = m;
+                }
+                break;
+            }
+
+            pre = m;
+            m = m.suivant;
 
             if(m == null)
-                tete = ma;
-
-            while(m != null){
-                Cellule info = (Cellule)m.info;
-
-                if(c.ligne > info.ligne || (c.ligne == info.ligne && c.colonne > info.colonne)) {
-                    if (pre == null) {
-                        tete = ma;
-                        ma.suivant = m;
-                    } else {
-                        pre.suivant = ma;
-                        ma.suivant = m;
-                    }
-
-                    break;
-                }
-
-                pre = m;
-                m = m.suivant;
-
-                if(m == null)
-                    pre.suivant = ma;
-            }
+                pre.suivant = ma;
         }
     }
 

@@ -6,34 +6,20 @@ public class Principale {
 
     public static void main(String[] Args){
 
-<<<<<<< HEAD
-        lectureFichier lF = new lectureFichier("C:\\Users\\Antoi\\Documents\\JeuVie2018\\exemple lif\\AATest.LIF");
-=======
         lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
->>>>>>> 3d783f3b465f42d26b4154773be2439c73cd70fd
         Generation g = new Generation(lF.ExtractionRegle());
 
         LC<Cellule> liste = lF.ConvertionFichier();
 
-<<<<<<< HEAD
-        System.out.println(liste.affichageTableau());
-
-        while(true) {
-            liste = g.nextGen(liste, g.neighbours(liste), 3);
+        for(int i = 0; i < 10; i++){
+            liste = g.nextGen(liste);
             System.out.println(liste.affichageTableau());
+            System.out.println(liste);
+            System.out.println("~~~~~~~~");
         }
-=======
-        //System.out.println(liste.affichageTableau());
-
-        Cellule c = new Cellule(0,0);
-
-        //System.out.println(g.Survivre(liste));
-        //System.out.println(g.comptageVoisins(liste, c));
->>>>>>> 3d783f3b465f42d26b4154773be2439c73cd70fd
-
     }
 
-    public static void deroulementJeu(LC l, final int LimiteGeneration){
+    public static void deroulementJeu(LC l, Generation g, final int LimiteGeneration){
 
         //Erreur de compilation si on met l'actionListener directement lors de la declaration
         Timer t = new Timer(5,null);
