@@ -179,8 +179,6 @@ public class LC<T> {
     public String affichageTableau(){
         Maillon m = tete;
 
-        System.out.println((Cellule)m.info == null);
-
         Maillon pre = null;
         LC<LigneAfficheur> mem = new LC<LigneAfficheur>();
         String ligneAct = "";
