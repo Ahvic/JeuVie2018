@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e51320ee-03a0-489e-be88-54fd797d760e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ACORN.LIF" afterPath="$PROJECT_DIR$/exemple lif/ACORN.LIF" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" />
-      <change beforePath="$PROJECT_DIR$/src/Cellule.java" afterPath="$PROJECT_DIR$/src/Cellule.java" />
-      <change beforePath="$PROJECT_DIR$/src/Generation.java" afterPath="$PROJECT_DIR$/src/Generation.java" />
-      <change beforePath="$PROJECT_DIR$/src/LC.java" afterPath="$PROJECT_DIR$/src/LC.java" />
       <change beforePath="$PROJECT_DIR$/src/Principale.java" afterPath="$PROJECT_DIR$/src/Principale.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,22 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Principale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="394">
+              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Generation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Generation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="1037">
               <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,7 +47,7 @@
       <file leaf-file-name="LC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
+            <state relative-caret-position="255">
               <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
               <folding>
                 <element signature="method#copie#0;class#LC#0" expanded="false" />
@@ -77,7 +66,7 @@
       <file leaf-file-name="Cellule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cellule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="272">
               <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
               <folding>
                 <element signature="e#237#238#0" expanded="true" />
@@ -111,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="239" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -132,9 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,7 +132,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -275,7 +264,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -286,13 +275,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2757158" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27934784" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27934784" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.520362" order="0" side_tool="true" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.479638" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.535445" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.46455505" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -318,11 +307,180 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="method#copie#0;class#LC#0" expanded="false" />
+            <element signature="method#fusion#0;class#LC#0" expanded="false" />
+            <element signature="method#ajout#0;class#LC#0" expanded="false" />
+            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
+            <element signature="method#equal#0;class#LC#0" expanded="false" />
+            <element signature="method#toString#0;class#LC#0" expanded="false" />
+            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
+            <element signature="method#affichageTableau#0;class#LC#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Generation#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#neighbours#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="method#copie#0;class#LC#0" expanded="false" />
+            <element signature="method#fusion#0;class#LC#0" expanded="false" />
+            <element signature="method#ajout#0;class#LC#0" expanded="false" />
+            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
+            <element signature="method#equal#0;class#LC#0" expanded="false" />
+            <element signature="method#toString#0;class#LC#0" expanded="false" />
+            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
+            <element signature="method#affichageTableau#0;class#LC#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Generation#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#neighbours#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="method#copie#0;class#LC#0" expanded="false" />
+            <element signature="method#fusion#0;class#LC#0" expanded="false" />
+            <element signature="method#ajout#0;class#LC#0" expanded="false" />
+            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
+            <element signature="method#equal#0;class#LC#0" expanded="false" />
+            <element signature="method#toString#0;class#LC#0" expanded="false" />
+            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
+            <element signature="method#affichageTableau#0;class#LC#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Generation#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#neighbours#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding>
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -379,13 +537,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Generation#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="method#comptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#neighbours#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
+        <state relative-caret-position="255">
           <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
           <folding>
             <element signature="method#copie#0;class#LC#0" expanded="false" />
@@ -400,45 +589,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-          <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Generation#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#comptageVoisins#0;class#Generation#0" expanded="false" />
-            <element signature="method#comptageVoisins#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#neighbours#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
-            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="394">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

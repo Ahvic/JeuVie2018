@@ -4,6 +4,8 @@ import java.awt.event.*;
 
 public class Principale {
 
+    private static LC liste = null;
+
     public static void main(String[] Args){
 
         lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
@@ -11,28 +13,23 @@ public class Principale {
 
         LC<Cellule> liste = lF.ConvertionFichier();
 
-        for(int i = 0; i < 10; i++){
-            liste = g.nextGen(liste);
-            System.out.println(liste.affichageTableau());
-            System.out.println(liste);
-            System.out.println("~~~~~~~~");
-        }
+        deroulementJeu(liste, g, 10);
     }
 
     public static void deroulementJeu(LC l, Generation g, final int LimiteGeneration){
+
+        liste = l;
 
         //Erreur de compilation si on met l'actionListener directement lors de la declaration
         Timer t = new Timer(5,null);
         t.addActionListener(new ActionListener() {
             int nbGeneration = 0;
             public void actionPerformed(ActionEvent e) {
-
-                System.out.println(nbGeneration);
-
-                //Calcul generation suivante
+                
+                liste = g.nextGen(liste);
                 //Detection etat stable
                 //Ajout de la generation dans genPreced de Generation
-                //System.out.println(l.affichageTableau());
+                System.out.println(liste.affichageTableau());
                 nbGeneration++;
 
                 if(nbGeneration == LimiteGeneration) {
