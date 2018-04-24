@@ -5,6 +5,7 @@ import java.awt.event.*;
 
 public class Principale {
 
+<<<<<<< HEAD
     public static void main(String[] Args){
 
         //passer le dossier en parametre
@@ -61,14 +62,18 @@ public class Principale {
 
 
         lectureFichier lF = new lectureFichier("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN - Original.LIF");
+=======
+    private static LC liste = null;
+>>>>>>> ce6ca789cc87ef5bcb3c735146a2518eaf3b4a06
 
+    public static void main(String[] Args){
 
-        //lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
-
+        lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
         Generation g = new Generation(lF.ExtractionRegle());
 
         LC<Cellule> liste = lF.ConvertionFichier();
 
+<<<<<<< HEAD
         /*
         while(true) {
             liste = g.nextGen(liste, g.neighbours(liste), 3);
@@ -93,22 +98,30 @@ public class Principale {
         */
 
 
+=======
+        deroulementJeu(liste, g, 10);
+>>>>>>> ce6ca789cc87ef5bcb3c735146a2518eaf3b4a06
     }
 
     public static void deroulementJeu(LC l, Generation g, final int LimiteGeneration){
+
+        //Sert a modifier la valeur de liste dans la classe anonyme actionPerformed
+        liste = l;
 
         //Erreur de compilation si on met l'actionListener directement lors de la declaration
         Timer t = new Timer(1,null);
         t.addActionListener(new ActionListener() {
             int nbGeneration = 0;
             public void actionPerformed(ActionEvent e) {
-
-                System.out.println(nbGeneration);
-
-                //Calcul generation suivante
+                
+                liste = g.nextGen(liste);
                 //Detection etat stable
                 //Ajout de la generation dans genPreced de Generation
+<<<<<<< HEAD
                 System.out.println(l.affichageTableau());
+=======
+                System.out.println(liste.affichageTableau());
+>>>>>>> ce6ca789cc87ef5bcb3c735146a2518eaf3b4a06
                 nbGeneration++;
 
                 if(nbGeneration == LimiteGeneration) {
