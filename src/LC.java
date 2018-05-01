@@ -178,76 +178,75 @@ public class LC<T> {
 
     public String affichageTableau(){
         Maillon m = tete;
+        String res = "";
 
-        Maillon pre = null;
-        LC<LigneAfficheur> mem = new LC<LigneAfficheur>();
-        String ligneAct = "";
-        Cellule info = null;
-        if(m != null)
-            info = (Cellule)m.info;
-        Cellule infoP = null;
-        int minMem = info.colonne;
+        if(m != null) {
+            Maillon pre = null;
+            LC<LigneAfficheur> mem = new LC<LigneAfficheur>();
+            String ligneAct = "";
+            Cellule info = (Cellule) m.info;
+            Cellule infoP = null;
+            int minMem = info.colonne;
 
-        while(m != null){
-            info = (Cellule)m.info;
-            infoP = null;
+            while (m != null) {
+                info = (Cellule) m.info;
+                infoP = null;
 
-            if(pre == null){
-                ligneAct += "*";
-            }else{
-                infoP = (Cellule)pre.info;
-                int dX = infoP.colonne - info.colonne;
-                int dY = infoP.ligne - info.ligne;
+                if (pre == null) {
+                    ligneAct += "*";
+                } else {
+                    infoP = (Cellule) pre.info;
+                    int dX = infoP.colonne - info.colonne;
+                    int dY = infoP.ligne - info.ligne;
 
-                //Passage a la ligne suivante
-                if(dY > 0){
-                    for(int i = dY; i > 0; i--) {
-                        mem.ajoutEnTete(new LigneAfficheur(ligneAct, infoP.colonne));
-                        ligneAct = "";
-                        dX = 1;
-                        if(infoP.colonne < minMem)
-                            minMem = infoP.colonne;
+                    //Passage a la ligne suivante
+                    if (dY > 0) {
+                        for (int i = dY; i > 0; i--) {
+                            mem.ajoutEnTete(new LigneAfficheur(ligneAct, infoP.colonne));
+                            ligneAct = "";
+                            dX = 1;
+                            if (infoP.colonne < minMem)
+                                minMem = infoP.colonne;
+                        }
+                    }
+
+                    //Creation de la ligne
+                    if (dX > 0) {
+                        //Ajout a gauche
+                        for (int i = dX - 1; i > 0; i--)
+                            ligneAct = "." + ligneAct;
+                        ligneAct = "*" + ligneAct;
+                    } else {
+                        //Ajout a droite
+                        for (int i = dX; i < 0; i++)
+                            ligneAct += ".";
+                        ligneAct += "*";
                     }
                 }
 
-                //Creation de la ligne
-                if(dX > 0){
-                    //Ajout a gauche
-                    for (int i = dX - 1; i > 0; i--)
-                        ligneAct = "." + ligneAct;
-                    ligneAct = "*" + ligneAct;
-                }else{
-                    //Ajout a droite
-                    for (int i = dX; i < 0; i++)
-                        ligneAct += ".";
-                    ligneAct += "*";
+                pre = m;
+                m = m.suivant;
+            }
+
+            mem.ajoutEnTete(new LigneAfficheur(ligneAct, info.colonne));
+            if (info != null) {
+                if (info.colonne < minMem)
+                    minMem = info.colonne;
+            }
+
+            Maillon n = mem.tete;
+
+            while (n != null) {
+                LigneAfficheur l = (LigneAfficheur) n.info;
+                int decalage = Math.abs(minMem - l.minimum);
+
+                for (int i = 0; i < decalage; i++) {
+                    res += ".";
                 }
+
+                res += l.contenu + "\n";
+                n = n.suivant;
             }
-
-            pre = m;
-            m = m.suivant;
-        }
-
-        mem.ajoutEnTete(new LigneAfficheur(ligneAct, info.colonne));
-        if(info != null){
-            if(info.colonne < minMem)
-                minMem = info.colonne;
-        }
-
-        Maillon n = mem.tete;
-
-        String res = "";
-
-        while (n != null){
-            LigneAfficheur l = (LigneAfficheur) n.info;
-            int decalage = Math.abs(minMem - l.minimum);
-
-            for(int i = 0; i < decalage; i++){
-                res += ".";
-            }
-
-            res += l.contenu + "\n";
-            n = n.suivant;
         }
 
         return res;

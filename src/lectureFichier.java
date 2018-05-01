@@ -47,7 +47,7 @@ public class lectureFichier {
                     } else {
                         for (int i = 0; i < line.length(); i++) {
                             if (line.charAt(i) == '*') {
-                                res.ajoutEnTete(new Cellule(i + offsetX, offsetY));
+                                res.ajout(new Cellule(i + offsetX, offsetY));
                             }
                         }
                         offsetY++;

@@ -4,13 +4,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.FilenameFilter;
 public class HTML {
-    String WorkingDirectory = System.getProperty("user.dir");
     String html = "<!DOCTYPE html><html lang=\"fr\"><head>\n<meta charset=\"utf-8\">\n<link rel=\"stylesheet\" href=\"style.css\">\n<title>page vide</title></head><body>" ;
-    File f = new File(WorkingDirectory+"\\Raw.html");
+    File f = new File("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\src\\Raw.html");
     public String[] getFiles(){
-        System.out.println("That's it :" + WorkingDirectory);
-        File folder = new File(WorkingDirectory +"\\exemple lif");
-        System.out.println(folder.getAbsolutePath());
+        File folder = new File("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif");
         File [] files = folder.listFiles(new FilenameFilter() {
             @Override
             public boolean accept(File folder, String name) {
@@ -29,8 +26,9 @@ public class HTML {
             String [] fileslist = getFiles();
             for (int i = 0; i < fileslist.length -1; i++){
                 String[] part = fileslist[i].split("\\\\");
-                String filename = part[part.length-1];
-                //write the evolution type of each file in the HTML file.
+                String filename = part[7];
+                System.out.println(part[7]);
+                //write the evolution time of each file in the HTML file.
                 html = html + "<p>nom fichier : " + filename + " type evolution : </p><br>";
             }
             html = html + "</body></html>";
