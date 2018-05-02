@@ -5,22 +5,37 @@ public class lectureFichier {
 
     private BufferedReader br;
 
-    public lectureFichier(String nom){
+    /**
+     * Va chercher le fichier dont la racine est indique en parametre et le
+     * place dans le bufferedReader pour un acces plus rapide pour la suite
+     * Si le fichier fait plus de 200000 caracteres, renvoi une IOException
+     *
+     * @param racine le fichier a lire
+     */
+
+    public lectureFichier(String racine){
         try {
-            File fichier = new File(nom);
+            File fichier = new File(racine);
             FileReader fr = new FileReader(fichier);
             br = new BufferedReader(fr);
 
             try{
                 br.mark(20000);
             }catch(IOException e){
-
+                System.out.println(e);
             }
 
         }catch(FileNotFoundException e) {
             System.out.println("Le fichier indique n'existe pas");
         }
     }
+
+    /**
+     * Convertit le fichier lu par lectureFichier en LC<Cellule>
+     * utilisable pour le calcul de la generation
+     *
+     * @return LC<Cellule> correspondante
+     */
 
     public LC<Cellule> ConvertionFichier(){
         LC<Cellule> res = new LC();
@@ -56,39 +71,6 @@ public class lectureFichier {
             }
         }catch (IOException e){
             e.toString();
-        }
-
-        return res;
-    }
-
-    /**
-     * Format de la règle : [survie]/[naissance]
-     * 23 se lis 2 ou 3
-     *
-     * @return la regle au format string
-     */
-
-    public String ExtractionRegle(){
-        String res = "23/3";
-
-        try{
-            br.reset();
-        }catch(IOException e){
-            System.out.println(e.toString());
-        }
-
-        try{
-            for(String ligne = br.readLine(); ligne != null; ligne = br.readLine()) {
-                if(ligne.startsWith("#N"))
-                    break;
-
-                if(ligne.startsWith("#R")){
-                    res = ligne.substring(3);
-                    break;
-                }
-            }
-        }catch(IOException e){
-            System.out.println(e.toString());
         }
 
         return res;

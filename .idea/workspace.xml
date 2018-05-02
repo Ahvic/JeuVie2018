@@ -2,233 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e51320ee-03a0-489e-be88-54fd797d760e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Antoine.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antoine.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml.orig" afterPath="$PROJECT_DIR$/.idea/workspace.xml.orig" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_BACKUP_5040.xml" afterPath="$PROJECT_DIR$/.idea/workspace_BACKUP_5040.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_BASE_5040.xml" afterPath="$PROJECT_DIR$/.idea/workspace_BASE_5040.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_LOCAL_5040.xml" afterPath="$PROJECT_DIR$/.idea/workspace_LOCAL_5040.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_REMOTE_5040.xml" afterPath="$PROJECT_DIR$/.idea/workspace_REMOTE_5040.xml" />
-      <change beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
-      <change beforePath="$PROJECT_DIR$/HTML/HTML.iml" afterPath="$PROJECT_DIR$/HTML/HTML.iml" />
-      <change beforePath="$PROJECT_DIR$/Programme2.java" afterPath="$PROJECT_DIR$/Programme2.java" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AATest.LIF" afterPath="$PROJECT_DIR$/exemple lif/AATest.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AATest.txt" afterPath="$PROJECT_DIR$/exemple lif/AATest.txt" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ACORN - Original.LIF" afterPath="$PROJECT_DIR$/exemple lif/ACORN - Original.LIF" />
+      <change beforePath="$PROJECT_DIR$/JeuVie2018.iml" afterPath="$PROJECT_DIR$/JeuVie2018.iml" />
       <change beforePath="$PROJECT_DIR$/exemple lif/ACORN.LIF" afterPath="$PROJECT_DIR$/exemple lif/ACORN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ADDER.LIF" afterPath="$PROJECT_DIR$/exemple lif/ADDER.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AK47.LIF" afterPath="$PROJECT_DIR$/exemple lif/AK47.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA20.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA20.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA25.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA25.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA25B.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA25B.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA33.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA33.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA33W.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA33W.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA40.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA40.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA50.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA50.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA50F.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA50F.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA50FA.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA50FA.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA50FN.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA50FN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA50S.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA50S.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA50SB.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA50SB.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/AQUA50SH.LIF" afterPath="$PROJECT_DIR$/exemple lif/AQUA50SH.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BARGE.LIF" afterPath="$PROJECT_DIR$/exemple lif/BARGE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BARGE2.LIF" afterPath="$PROJECT_DIR$/exemple lif/BARGE2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BHEPTO.LIF" afterPath="$PROJECT_DIR$/exemple lif/BHEPTO.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BHEPTPUF.LIF" afterPath="$PROJECT_DIR$/exemple lif/BHEPTPUF.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BI-GUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/BI-GUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BLKRAKE.LIF" afterPath="$PROJECT_DIR$/exemple lif/BLKRAKE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BREEDER.LIF" afterPath="$PROJECT_DIR$/exemple lif/BREEDER.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BREEDER2.LIF" afterPath="$PROJECT_DIR$/exemple lif/BREEDER2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BREEDER3.LIF" afterPath="$PROJECT_DIR$/exemple lif/BREEDER3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BREEDER4.LIF" afterPath="$PROJECT_DIR$/exemple lif/BREEDER4.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BREEDER5.LIF" afterPath="$PROJECT_DIR$/exemple lif/BREEDER5.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BREEDST.LIF" afterPath="$PROJECT_DIR$/exemple lif/BREEDST.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BSHIP.LIF" afterPath="$PROJECT_DIR$/exemple lif/BSHIP.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BSHIP2.LIF" afterPath="$PROJECT_DIR$/exemple lif/BSHIP2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/BTRACK.LIF" afterPath="$PROJECT_DIR$/exemple lif/BTRACK.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/C3PUF.LIF" afterPath="$PROJECT_DIR$/exemple lif/C3PUF.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/COERAKE1.LIF" afterPath="$PROJECT_DIR$/exemple lif/COERAKE1.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/COERAKE2.LIF" afterPath="$PROJECT_DIR$/exemple lif/COERAKE2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/CORDER.LIF" afterPath="$PROJECT_DIR$/exemple lif/CORDER.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/CORDER2.LIF" afterPath="$PROJECT_DIR$/exemple lif/CORDER2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/CORDPULL.LIF" afterPath="$PROJECT_DIR$/exemple lif/CORDPULL.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/CORDTOSS.LIF" afterPath="$PROJECT_DIR$/exemple lif/CORDTOSS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/CRYSTAL.LIF" afterPath="$PROJECT_DIR$/exemple lif/CRYSTAL.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/CYCLTRON.LIF" afterPath="$PROJECT_DIR$/exemple lif/CYCLTRON.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/DOUBLEX.LIF" afterPath="$PROJECT_DIR$/exemple lif/DOUBLEX.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/E15GROW.LIF" afterPath="$PROJECT_DIR$/exemple lif/E15GROW.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/EATERS.LIF" afterPath="$PROJECT_DIR$/exemple lif/EATERS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/EDEN.LIF" afterPath="$PROJECT_DIR$/exemple lif/EDEN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/EFENCE.LIF" afterPath="$PROJECT_DIR$/exemple lif/EFENCE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/FUSES.LIF" afterPath="$PROJECT_DIR$/exemple lif/FUSES.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GLIDERS6.LIF" afterPath="$PROJECT_DIR$/exemple lif/GLIDERS6.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GLOSSARY.DOC" afterPath="$PROJECT_DIR$/exemple lif/GLOSSARY.DOC" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN104.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN104.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN132.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN132.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN144.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN144.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN184.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN184.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN246.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN246.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN30.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN30.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN44.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN44.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN46.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN46.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUN4B.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUN4B.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUNB112.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUNB112.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUNB256.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUNB256.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUNB856.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUNB856.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUNSTAR.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUNSTAR.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUNSTAR2.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUNSTAR2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/GUNSTAR3.LIF" afterPath="$PROJECT_DIR$/exemple lif/GUNSTAR3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/HACKSAW.LIF" afterPath="$PROJECT_DIR$/exemple lif/HACKSAW.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/HOTEL.LIF" afterPath="$PROJECT_DIR$/exemple lif/HOTEL.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/HWSSGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/HWSSGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/IRRAT2.LIF" afterPath="$PROJECT_DIR$/exemple lif/IRRAT2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/IRRAT5.LIF" afterPath="$PROJECT_DIR$/exemple lif/IRRAT5.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/IRRATU.LIF" afterPath="$PROJECT_DIR$/exemple lif/IRRATU.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/JAWS.LIF" afterPath="$PROJECT_DIR$/exemple lif/JAWS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LINEPUF.LIF" afterPath="$PROJECT_DIR$/exemple lif/LINEPUF.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LINEPUF2.LIF" afterPath="$PROJECT_DIR$/exemple lif/LINEPUF2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LOGGROW.LIF" afterPath="$PROJECT_DIR$/exemple lif/LOGGROW.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LOGGROW2.LIF" afterPath="$PROJECT_DIR$/exemple lif/LOGGROW2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LOIC.LIF" afterPath="$PROJECT_DIR$/exemple lif/LOIC.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LONEDOTS.LIF" afterPath="$PROJECT_DIR$/exemple lif/LONEDOTS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LOOP.LIF" afterPath="$PROJECT_DIR$/exemple lif/LOOP.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LWSSGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/LWSSGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LWSSRAK2.LIF" afterPath="$PROJECT_DIR$/exemple lif/LWSSRAK2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/LWSSRAKE.LIF" afterPath="$PROJECT_DIR$/exemple lif/LWSSRAKE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAKEBILS.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAKEBILS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAKEFISH.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAKEFISH.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAKEFUSE.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAKEFUSE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAKEGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAKEGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAKEHSLR.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAKEHSLR.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAKEOSCS.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAKEOSCS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAKEPOLE.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAKEPOLE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAX.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAX.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAX2.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAX2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MAX3.LIF" afterPath="$PROJECT_DIR$/exemple lif/MAX3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MEMORY.LIF" afterPath="$PROJECT_DIR$/exemple lif/MEMORY.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MIRAGE.LIF" afterPath="$PROJECT_DIR$/exemple lif/MIRAGE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MWSSGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/MWSSGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MWSSRAK2.LIF" afterPath="$PROJECT_DIR$/exemple lif/MWSSRAK2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/MWSSRAKE.LIF" afterPath="$PROJECT_DIR$/exemple lif/MWSSRAKE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP2.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP3.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP3X.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP3X.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP4.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP4.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP4X.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP4X.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP5.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP5.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP6.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP6.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP6X.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP6X.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSP7-9.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSP7-9.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSPN1.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSPN1.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSPN2.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSPN2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/OSCSPN3.LIF" afterPath="$PROJECT_DIR$/exemple lif/OSCSPN3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/P136.LIF" afterPath="$PROJECT_DIR$/exemple lif/P136.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/P94S.LIF" afterPath="$PROJECT_DIR$/exemple lif/P94S.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PI.LIF" afterPath="$PROJECT_DIR$/exemple lif/PI.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PINBALL.LIF" afterPath="$PROJECT_DIR$/exemple lif/PINBALL.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PIPUF.LIF" afterPath="$PROJECT_DIR$/exemple lif/PIPUF.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/POLES.LIF" afterPath="$PROJECT_DIR$/exemple lif/POLES.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PRIMES.LIF" afterPath="$PROJECT_DIR$/exemple lif/PRIMES.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PSRTRAIN.LIF" afterPath="$PROJECT_DIR$/exemple lif/PSRTRAIN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PUFTRAIN.LIF" afterPath="$PROJECT_DIR$/exemple lif/PUFTRAIN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PULLER.LIF" afterPath="$PROJECT_DIR$/exemple lif/PULLER.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PUSHER.LIF" afterPath="$PROJECT_DIR$/exemple lif/PUSHER.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PUSHGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/PUSHGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/PUSHGUN2.LIF" afterPath="$PROJECT_DIR$/exemple lif/PUSHGUN2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/QUILT.LIF" afterPath="$PROJECT_DIR$/exemple lif/QUILT.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RABBITS.LIF" afterPath="$PROJECT_DIR$/exemple lif/RABBITS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RACE.LIF" afterPath="$PROJECT_DIR$/exemple lif/RACE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RAKE.LIF" afterPath="$PROJECT_DIR$/exemple lif/RAKE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RAKE2.LIF" afterPath="$PROJECT_DIR$/exemple lif/RAKE2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RAKE3.LIF" afterPath="$PROJECT_DIR$/exemple lif/RAKE3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RAKEGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/RAKEGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RANDGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/RANDGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RANDGUN2.LIF" afterPath="$PROJECT_DIR$/exemple lif/RANDGUN2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RANDLWSS.LIF" afterPath="$PROJECT_DIR$/exemple lif/RANDLWSS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/README.DOC" afterPath="$PROJECT_DIR$/exemple lif/README.DOC" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RELAY.LIF" afterPath="$PROJECT_DIR$/exemple lif/RELAY.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RELAY2.LIF" afterPath="$PROJECT_DIR$/exemple lif/RELAY2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/REVFUSE.LIF" afterPath="$PROJECT_DIR$/exemple lif/REVFUSE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ROT8.LIF" afterPath="$PROJECT_DIR$/exemple lif/ROT8.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ROUND2.LIF" afterPath="$PROJECT_DIR$/exemple lif/ROUND2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/RPENTO.LIF" afterPath="$PROJECT_DIR$/exemple lif/RPENTO.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SAWTOOT2.LIF" afterPath="$PROJECT_DIR$/exemple lif/SAWTOOT2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SAWTOOT3.LIF" afterPath="$PROJECT_DIR$/exemple lif/SAWTOOT3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SAWTOOT4.LIF" afterPath="$PROJECT_DIR$/exemple lif/SAWTOOT4.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SAWTOOT5.LIF" afterPath="$PROJECT_DIR$/exemple lif/SAWTOOT5.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SAWTOOT6.LIF" afterPath="$PROJECT_DIR$/exemple lif/SAWTOOT6.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SAWTOOT7.LIF" afterPath="$PROJECT_DIR$/exemple lif/SAWTOOT7.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SAWTOOTH.LIF" afterPath="$PROJECT_DIR$/exemple lif/SAWTOOTH.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SBMEM.LIF" afterPath="$PROJECT_DIR$/exemple lif/SBMEM.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SLOPUF.LIF" afterPath="$PROJECT_DIR$/exemple lif/SLOPUF.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SLOPUF2.LIF" afterPath="$PROJECT_DIR$/exemple lif/SLOPUF2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SLR.LIF" afterPath="$PROJECT_DIR$/exemple lif/SLR.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SPARK2PI.LIF" afterPath="$PROJECT_DIR$/exemple lif/SPARK2PI.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SPDRRAKE.LIF" afterPath="$PROJECT_DIR$/exemple lif/SPDRRAKE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SPIRAL.LIF" afterPath="$PROJECT_DIR$/exemple lif/SPIRAL.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/STARGATE.LIF" afterPath="$PROJECT_DIR$/exemple lif/STARGATE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/STATS.DOC" afterPath="$PROJECT_DIR$/exemple lif/STATS.DOC" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/STILL.LIF" afterPath="$PROJECT_DIR$/exemple lif/STILL.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/STRETCH.LIF" afterPath="$PROJECT_DIR$/exemple lif/STRETCH.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SWITCHEN.LIF" afterPath="$PROJECT_DIR$/exemple lif/SWITCHEN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/SWITCPUF.LIF" afterPath="$PROJECT_DIR$/exemple lif/SWITCPUF.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THICKGU2.LIF" afterPath="$PROJECT_DIR$/exemple lif/THICKGU2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THICKGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/THICKGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THINGUN.LIF" afterPath="$PROJECT_DIR$/exemple lif/THINGUN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THINGUN2.LIF" afterPath="$PROJECT_DIR$/exemple lif/THINGUN2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THINGUN3.LIF" afterPath="$PROJECT_DIR$/exemple lif/THINGUN3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THINGUN4.LIF" afterPath="$PROJECT_DIR$/exemple lif/THINGUN4.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THINRAKE.LIF" afterPath="$PROJECT_DIR$/exemple lif/THINRAKE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/THUE.LIF" afterPath="$PROJECT_DIR$/exemple lif/THUE.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/TIRETRAK.LIF" afterPath="$PROJECT_DIR$/exemple lif/TIRETRAK.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/TIRETRAX.LIF" afterPath="$PROJECT_DIR$/exemple lif/TIRETRAX.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/TNDRBIRD.LIF" afterPath="$PROJECT_DIR$/exemple lif/TNDRBIRD.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/TRACK.LIF" afterPath="$PROJECT_DIR$/exemple lif/TRACK.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/TUBTRAX.LIF" afterPath="$PROJECT_DIR$/exemple lif/TUBTRAX.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/TWINDOTS.LIF" afterPath="$PROJECT_DIR$/exemple lif/TWINDOTS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/UNITCELL.LIF" afterPath="$PROJECT_DIR$/exemple lif/UNITCELL.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/VENETIA2.LIF" afterPath="$PROJECT_DIR$/exemple lif/VENETIA2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/VENETIA3.LIF" afterPath="$PROJECT_DIR$/exemple lif/VENETIA3.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/VENETIAN.LIF" afterPath="$PROJECT_DIR$/exemple lif/VENETIAN.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/WING.LIF" afterPath="$PROJECT_DIR$/exemple lif/WING.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/WRITERS.DOC" afterPath="$PROJECT_DIR$/exemple lif/WRITERS.DOC" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ZIP2.LIF" afterPath="$PROJECT_DIR$/exemple lif/ZIP2.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ZIPS.LIF" afterPath="$PROJECT_DIR$/exemple lif/ZIPS.LIF" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/exempleTexte.txt" afterPath="$PROJECT_DIR$/exemple lif/exempleTexte.txt" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.classpath" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.classpath" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.gitignore" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/dictionaries/Antoine.xml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/dictionaries/Antoine.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/encodings.xml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/misc.xml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/modules.xml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/vcs.xml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.project" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/.project" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.classpath" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/dictionaries/Antoine.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.project" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class.orig" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/HTML$1.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/HTML$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/HTML.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/HTML.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/JeuVie2018.iml" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/JeuVie2018.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/JeuDeLaVie.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/JeuVie2018.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class.orig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LigneAfficheur.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/LigneAfficheur.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Note.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Programme.jar" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Programme.jar" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Raw.html" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Raw.html" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/out/production/JeuVie2018/.gitignore" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/out/production/JeuVie2018/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/replay_pid8652.log" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/replay_pid8652.log" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class.orig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Programme2$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Programme2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/lectureFichier.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/lectureFichier.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/out/production/JeuVie2018/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/projet_jeu_de_la_vie.pdf" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/Cellule.java" afterPath="$PROJECT_DIR$/src/Cellule.java" />
       <change beforePath="$PROJECT_DIR$/src/Generation.java" afterPath="$PROJECT_DIR$/src/Generation.java" />
       <change beforePath="$PROJECT_DIR$/src/HTML.java" afterPath="$PROJECT_DIR$/src/HTML.java" />
+      <change beforePath="$PROJECT_DIR$/src/JeuDeLaVie.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/LC.java" afterPath="$PROJECT_DIR$/src/LC.java" />
+      <change beforePath="$PROJECT_DIR$/src/LigneAfficheur.java" afterPath="$PROJECT_DIR$/src/LigneAfficheur.java" />
       <change beforePath="$PROJECT_DIR$/src/Principale.java" afterPath="$PROJECT_DIR$/src/Principale.java" />
-      <change beforePath="$PROJECT_DIR$/src/Raw.html" afterPath="$PROJECT_DIR$/src/Raw.html" />
       <change beforePath="$PROJECT_DIR$/src/lectureFichier.java" afterPath="$PROJECT_DIR$/src/lectureFichier.java" />
-      <change beforePath="$PROJECT_DIR$/src/replay_pid8652.log" afterPath="$PROJECT_DIR$/src/replay_pid8652.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -238,77 +51,51 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Cellule.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/Cellule.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="663">
-                    <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-                    <folding>
-                      <element signature="e#237#238#0" expanded="true" />
-                      <element signature="e#268#269#0" expanded="true" />
-                      <element signature="e#313#314#0" expanded="true" />
-                      <element signature="e#353#354#0" expanded="true" />
-                      <element signature="e#1287#1288#0" expanded="true" />
-                      <element signature="e#1343#1344#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Generation.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/Generation.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="209">
-                    <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="e#963#964#0" expanded="true" />
-                      <element signature="e#1003#1004#0" expanded="true" />
-                      <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
-                      <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/JeuVie2018$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1525263971161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Principale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="612">
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LC.java">
+      <file leaf-file-name="Generation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Generation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+            <state relative-caret-position="612">
+              <caret line="118" column="42" lean-forward="false" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
               <folding>
-                <element signature="method#copie#0;class#LC#0" expanded="false" />
-                <element signature="method#fusion#0;class#LC#0" expanded="false" />
-                <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-                <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-                <element signature="method#equal#0;class#LC#0" expanded="false" />
-                <element signature="method#toString#0;class#LC#0" expanded="false" />
-                <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
+                <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
+                <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+                <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cellule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+                <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+                <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+                <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+                <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+                <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+                <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+                <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -318,8 +105,15 @@
         <entry file="file://$PROJECT_DIR$/src/LigneAfficheur.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
+              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="29" />
+              <folding>
+                <element signature="method#LigneAfficheur#0;class#LigneAfficheur#0" expanded="false" />
+                <element signature="docComment;method#ajoutVivant#0;class#LigneAfficheur#0" expanded="false" />
+                <element signature="docComment;method#ajoutVide#0;class#LigneAfficheur#0" expanded="false" />
+                <element signature="docComment;method#decalage#0;class#LigneAfficheur#0" expanded="false" />
+                <element signature="docComment;method#toString#0;class#LigneAfficheur#0" expanded="false" />
+                <element signature="method#toString#0;class#LigneAfficheur#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -327,9 +121,60 @@
       <file leaf-file-name="lectureFichier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lectureFichier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+            <state relative-caret-position="170">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <folding>
+                <element signature="docComment;method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+                <element signature="method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+                <element signature="docComment;method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
+                <element signature="method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTML.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HTML.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2924">
+              <caret line="180" column="44" lean-forward="false" selection-start-line="180" selection-start-column="44" selection-end-line="180" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Maillon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Maillon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LCTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LCTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#113#114#0" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -339,7 +184,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>system.out.println</find>
+      <find>comptageVoisins</find>
+      <find>neighbours</find>
+      <find>nextGen</find>
     </findStrings>
+    <replaceStrings>
+      <replace>ComptageVoisins</replace>
+      <replace>Neighbours</replace>
+      <replace>NextGen</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -352,19 +205,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Cellule.java" />
+        <option value="$PROJECT_DIR$/src/LigneAfficheur.java" />
+        <option value="$PROJECT_DIR$/src/lectureFichier.java" />
+        <option value="$PROJECT_DIR$/src/HTML.java" />
+        <option value="$PROJECT_DIR$/src/PrincipaleTest.groovy" />
+        <option value="$PROJECT_DIR$/src/LCTest.groovy" />
+        <option value="$PROJECT_DIR$/src/LC.java" />
+        <option value="$PROJECT_DIR$/src/LCTest.java" />
         <option value="$PROJECT_DIR$/src/Generation.java" />
         <option value="$PROJECT_DIR$/src/Principale.java" />
-        <option value="$PROJECT_DIR$/src/Cellule.java" />
-        <option value="$PROJECT_DIR$/src/lectureFichier.java" />
-        <option value="$PROJECT_DIR$/src/LC.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="239" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2077" />
+    <option name="y" value="19" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -381,7 +242,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -398,10 +258,24 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="groovy.util.GroovyTestCase" />
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -415,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -450,6 +324,106 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="LCTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LCTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LCTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LCTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LCTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -511,9 +485,29 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LCTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LCTest (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LCTest (2)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LCTest (3)" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LCTest (4)" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LCTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LCTest (4)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LCTest (3)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LCTest (2)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LCTest (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -528,8 +522,40 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="LCTest - 2018.05.02 at 14h 39m 52s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 41m 20s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 45m 10s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 47m 07s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 52m 00s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 52m 11s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 53m 30s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 57m 15s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 57m 55s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LCTest - 2018.05.02 at 14h 59m 14s.xml">
+      <configuration name="LCTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="29" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -540,13 +566,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2757158" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20543478" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21235955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.55266756" order="0" side_tool="true" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.4473324" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18511905" sideWeight="0.56348073" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18511905" sideWeight="0.43651927" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -565,18 +592,159 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LigneAfficheur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="method#LigneAfficheur#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#ajoutVivant#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#ajoutVide#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#decalage#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="method#toString#0;class#LigneAfficheur#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectureFichier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="docComment;method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HTML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="177" column="36" lean-forward="false" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectureFichier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding>
+            <element signature="docComment;method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="docComment;method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+          <folding>
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LigneAfficheur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="method#LigneAfficheur#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#ajoutVivant#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#ajoutVide#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#decalage#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="method#toString#0;class#LigneAfficheur#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="177" column="45" lean-forward="false" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
+          <folding>
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -585,15 +753,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="179" column="25" lean-forward="false" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-          <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -602,11 +762,9 @@
         <state relative-caret-position="3281">
           <caret line="198" column="20" lean-forward="false" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
             <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,7 +775,6 @@
           <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -627,11 +784,9 @@
         <state relative-caret-position="1037">
           <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
             <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -641,12 +796,14 @@
         <state relative-caret-position="272">
           <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -655,14 +812,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="179" column="25" lean-forward="false" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+          <folding>
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding>
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -673,21 +869,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,14 +877,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -713,68 +898,14 @@
         <state relative-caret-position="272">
           <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-          <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -785,7 +916,6 @@
           <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -794,15 +924,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -811,12 +933,14 @@
         <state relative-caret-position="272">
           <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -826,11 +950,9 @@
         <state relative-caret-position="1037">
           <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
             <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -841,7 +963,6 @@
           <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,15 +971,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -867,12 +980,14 @@
         <state relative-caret-position="272">
           <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -882,11 +997,9 @@
         <state relative-caret-position="1037">
           <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
             <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -897,7 +1010,6 @@
           <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -907,12 +1019,14 @@
         <state relative-caret-position="272">
           <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -921,15 +1035,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -938,11 +1044,9 @@
         <state relative-caret-position="578">
           <caret line="125" column="35" lean-forward="false" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
             <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -954,55 +1058,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+    <entry file="file://$PROJECT_DIR$/src/JeuDeLaVie.java" />
+    <entry file="file://$PROJECT_DIR$/src/PrincipaleTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LCTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="docComment;method#nextGen#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="e#113#114#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cellule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="153">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LigneAfficheur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="29" />
+          <folding>
+            <element signature="method#LigneAfficheur#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#ajoutVivant#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#ajoutVide#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#decalage#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#LigneAfficheur#0" expanded="false" />
+            <element signature="method#toString#0;class#LigneAfficheur#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lectureFichier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#deroulementJeu#0;class#Principale#0" expanded="false" />
+            <element signature="docComment;method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="method#lectureFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="docComment;method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
+            <element signature="method#ConvertionFichier#0;class#lectureFichier#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LigneAfficheur.java">
+    <entry file="file://$PROJECT_DIR$/src/HTML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maillon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
@@ -1012,16 +1152,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        <state relative-caret-position="2924">
+          <caret line="180" column="44" lean-forward="false" selection-start-line="180" selection-start-column="44" selection-end-line="180" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="118" column="42" lean-forward="false" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
           <folding>
-            <element signature="method#copie#0;class#LC#0" expanded="false" />
-            <element signature="method#fusion#0;class#LC#0" expanded="false" />
-            <element signature="method#appartientListe#0;class#LC#0" expanded="false" />
-            <element signature="method#supprimer1oc#0;class#LC#0" expanded="false" />
-            <element signature="method#equal#0;class#LC#0" expanded="false" />
-            <element signature="method#toString#0;class#LC#0" expanded="false" />
-            <element signature="docComment;method#affichageTableau#0;class#LC#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

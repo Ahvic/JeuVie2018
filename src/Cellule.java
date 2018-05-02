@@ -1,7 +1,7 @@
 public class Cellule {
-    int colonne;
-    int ligne;
-    int nbVoisin;
+    private int colonne;
+    private int ligne;
+    private int nbVoisin;
 
     public Cellule(int colonne, int ligne){
         this.colonne = colonne;
@@ -10,9 +10,42 @@ public class Cellule {
 
     }
 
+    /**
+     * Renvoi la colonne de la cellule
+     *
+     * @return la colonne de la cellule
+     */
+
+    public int getColonne() {
+        return colonne;
+    }
+
+    /**
+     * Renvoi la ligne de la cellule
+     *
+     * @return la ligne de la cellule
+     */
+
+    public int getLigne() {
+        return ligne;
+    }
+
+    /**
+     * Renvoi le nombre de voisin de la cellule
+     * N'effectue pas une mise a jour du nombre de voisin
+     *
+     * @return le nombre de voisin
+     */
+
     public int getNbVoisin() {
         return nbVoisin;
     }
+
+    /**
+     * Affecte le nombre de voisin de la cellule a nbVoisin
+     *
+     * @param nbVoisin le nombre de voisin de la cellule a affecter
+     */
 
     public void setNbVoisin(int nbVoisin) {
         this.nbVoisin = nbVoisin;
@@ -26,6 +59,7 @@ public class Cellule {
      * @param coinHautGauche les coordonnées au format [x,y] du coin haut gauche de la limite
      * @param coinBasDroit les coordonnées au format [x,y] du coin bas droit de la limite
      * @return vrai si la cellule est dans le plateau, faux sinon
+     * @throws IllegalArgumentException
      */
 
     public boolean determineDansLimite(int[] coinHautGauche, int[] coinBasDroit) throws IllegalArgumentException{
@@ -35,6 +69,12 @@ public class Cellule {
 
         return colonne >= coinHautGauche[0] && ligne >= coinHautGauche[1] && colonne <= coinBasDroit[0] && ligne <= coinBasDroit[1];
     }
+
+    /**
+     * Renvoi les coordonnees de la cellule au format (colonne, ligne)
+     *
+     * @return les coordonnees de la cellule
+     */
 
     public String toString(){
         return "(" + colonne + "," + ligne + ")";

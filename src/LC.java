@@ -1,85 +1,94 @@
 
 public class LC<T> {
 
-    Maillon<T> tete;
+    private Maillon<T> tete;
 
     LC(){
         tete = null;
     }
 
-    public LC<T> copie(){
-        LC<T> res = new LC();
-
-        Maillon m = tete;
-
-        while(m != null){
-            res.ajout((T)m.info);
-
-            m = m.suivant;
-        }
-
-        return res;
-    }
-
-    public void fusion(LC<T> l){
-        Maillon m = l.tete;
-
-        while(m != null){
-            T info = (T)m.info;
-
-            if(!appartientListe(info))
-                ajout(info);
-
-            m = m.suivant;
-        }
-    }
+    /**
+     * Ajoute l'element v en tete de la liste chainee si ce dernier n'appartient pas deja a la liste
+     *
+     * @param v l'element a ajouter
+     */
 
     public void ajoutEnTete(T v){
         if(!appartientListe(v)) tete = new Maillon<T>(v, tete);
     }
 
+    /**
+     * Rajoute un nouveau maillon a la liste chainee
+     * Si v est une cellule, ce dernier sera place en fonction de ses coordonnees afin que
+     * la liste chainee soit trie par ordre croissant en donnant la priorite a la ligne des cellules
+     * puis leur colonne.
+     * Si v n'est pas une cellule, il sera rajouter en tete de la liste chainee.
+     *
+     * @param v l'element a ajouter
+     */
+
     public void ajout(T v){
-        Maillon m = tete;
-        Maillon pre = null;
-        Cellule c = (Cellule)v;
-        Maillon ma = new Maillon(c, null);
 
-        if(m == null)
-            tete = ma;
+        if(v instanceof Cellule) {
+            Maillon m = tete;
+            Maillon pre = null;
+            Cellule c = (Cellule) v;
+            Maillon ma = new Maillon(c, null);
 
-        while(m != null){
-            Cellule info = (Cellule)m.info;
+            if (m == null)
+                tete = ma;
 
-            if(c.ligne > info.ligne || (c.ligne == info.ligne && c.colonne > info.colonne)) {
-                if (pre == null) {
-                    tete = ma;
-                    ma.suivant = m;
-                } else {
-                    pre.suivant = ma;
-                    ma.suivant = m;
+            while (m != null) {
+                Cellule info = (Cellule) m.info;
+
+                if (c.getLigne() < info.getLigne() || (c.getLigne() == info.getLigne() && c.getColonne() < info.getColonne())) {
+                    if (pre == null) {
+                        tete = ma;
+                        ma.suivant = m;
+                    } else {
+                        pre.suivant = ma;
+                        ma.suivant = m;
+                    }
+                    break;
                 }
-                break;
+
+                pre = m;
+                m = m.suivant;
+
+                if (m == null)
+                    pre.suivant = ma;
             }
-
-            pre = m;
-            m = m.suivant;
-
-            if(m == null)
-                pre.suivant = ma;
+        }else{
+            ajoutEnTete(v);
         }
     }
 
-    public Maillon<T> teteListe(){
+    /**
+     * Renvoi le maillon de tete de la LC
+     *
+     * @return le maillon de tete
+     */
+
+    public Maillon<T> getTete(){
         return tete;
     }
 
-    public T elementTete(){
-        return tete.info;
-    }
+    /**
+     * Renseigne si la liste est vide
+     *
+     * @return vrai si la liste est vide
+     */
 
     public boolean estListeVide(){
         return (this.tete == null);
     }
+
+    /**
+     * Retourne si l'element x appartient a la liste chainee
+     *
+     * @param x l'element a tester
+     * @return vrai si l'element appartient a la LC
+     */
 
     public boolean appartientListe(T x){
         if(!estListeVide()) {
@@ -90,7 +99,7 @@ public class LC<T> {
                 if (x instanceof Cellule && m.info instanceof Cellule) {
                     Cellule info = (Cellule) m.info;
 
-                    if ((info.colonne == ((Cellule) x).colonne && info.ligne == ((Cellule) x).ligne)) return true;
+                    if ((info.getColonne() == ((Cellule) x).getColonne() && info.getLigne() == ((Cellule) x).getLigne())) return true;
                 } else {
                     if (m.info == x) return true;
                 }
@@ -102,33 +111,12 @@ public class LC<T> {
         return false;
     }
 
-    public LC<T> supprimer1oc(T x){
-
-        if(estListeVide()) return this;
-
-        if(tete.info == x){
-            tete = tete.suivant;
-            return this;
-        }
-
-        Maillon<T> m = tete.suivant;
-        Maillon<T> pre = tete;
-
-        while(m != null){
-
-            if(m.info == x){
-                pre.suivant = m.suivant;
-                return this;
-            }
-            else{
-                pre = m;
-                m = m.suivant;
-            }
-
-        }
-
-        return this;
-    }
+    /**
+     * Verifie si deux LC sont egales
+     *
+     * @param l la LC a comparer
+     * @return vrai si les LC sont egales
+     */
 
     public boolean equal(LC<T> l){
         Maillon<T> m = tete;
@@ -140,14 +128,19 @@ public class LC<T> {
             p = p.suivant;
         }
 
-
         return true;
     }
+
+    /**
+     * Renvoi le contenu de la liste chainee sous forme de string
+     *
+     * @return
+     */
 
     public String toString(){
         String s = "";
 
-        if(estListeVide()) return s;
+        if(estListeVide()) return "LC vide";
 
         Maillon<T> m = tete;
 
@@ -159,7 +152,10 @@ public class LC<T> {
                 s += info.toString();
             }
             else{
-                s +=  m.info.toString() + "\n";
+                if (info instanceof Integer){
+                    s += Integer.toString((int)info);
+                }else
+                    s +=  info.toString() + "\n";
             }
 
             m = m.suivant;
@@ -170,83 +166,108 @@ public class LC<T> {
 
     /**
      * Affiche la liste chainee sous la forme d'un tableau
-     *
-     * Marche mais degeu
+     * Parcours la liste chainee une seule fois
      *
      * @return le tableau
      */
 
     public String affichageTableau(){
         Maillon m = tete;
+        Maillon pre = null;
         String res = "";
+        String echelle = "";
+        LC<LigneAfficheur> ensLigne = new LC<>();
 
-        if(m != null) {
-            Maillon pre = null;
-            LC<LigneAfficheur> mem = new LC<LigneAfficheur>();
-            String ligneAct = "";
+        if(estListeVide()) return "LC vide";
+
+        if(m != null && m.info instanceof Cellule) {
             Cellule info = (Cellule) m.info;
-            Cellule infoP = null;
-            int minMem = info.colonne;
+            int minColonne = info.getColonne();
+            int maxColonne = info.getColonne();
+            LigneAfficheur act = new LigneAfficheur("",info.getLigne());
 
             while (m != null) {
-                info = (Cellule) m.info;
-                infoP = null;
+                info = (Cellule)m.info;
 
-                if (pre == null) {
-                    ligneAct += "*";
-                } else {
-                    infoP = (Cellule) pre.info;
-                    int dX = infoP.colonne - info.colonne;
-                    int dY = infoP.ligne - info.ligne;
+                if(info.getColonne() < minColonne){
+                    //Ajoute le decalage a toute les lignes existantes
+                    Maillon t = ensLigne.tete;
 
-                    //Passage a la ligne suivante
-                    if (dY > 0) {
-                        for (int i = dY; i > 0; i--) {
-                            mem.ajoutEnTete(new LigneAfficheur(ligneAct, infoP.colonne));
-                            ligneAct = "";
-                            dX = 1;
-                            if (infoP.colonne < minMem)
-                                minMem = infoP.colonne;
-                        }
+                    for(int i = 0; i < Math.abs(minColonne - info.getColonne()); i++)
+                        act.decalage();
+
+                    while(t != null){
+                        for(int i = 0; i < Math.abs(minColonne - info.getColonne()); i++)
+                            ((LigneAfficheur) t.info).decalage();
+
+                        t = t.suivant;
                     }
 
-                    //Creation de la ligne
-                    if (dX > 0) {
-                        //Ajout a gauche
-                        for (int i = dX - 1; i > 0; i--)
-                            ligneAct = "." + ligneAct;
-                        ligneAct = "*" + ligneAct;
-                    } else {
-                        //Ajout a droite
-                        for (int i = dX; i < 0; i++)
-                            ligneAct += ".";
-                        ligneAct += "*";
+                    minColonne = info.getColonne();
+                }
+
+                if(info.getColonne() > maxColonne){
+                    maxColonne = info.getColonne();
+                }
+
+                //Pour le premier point ou quand le point actuel est sur la meme ligne que le precedent
+                if(pre == null || info.getLigne() == ((Cellule)pre.info).getLigne()){
+                    if(pre != null){
+                        for(int i = 0; i < Math.abs(info.getColonne() - ((Cellule)pre.info).getColonne()) - 1; i++)
+                            act.ajoutVide();
                     }
+                    act.ajoutVivant();
+                }else{
+                    ensLigne.ajoutEnTete(act);
+                    act = new LigneAfficheur("", info.getLigne());
+                    for(int i = 0; i < Math.abs(minColonne - info.getColonne()); i++)
+                        act.ajoutVide();
+                    act.ajoutVivant();
                 }
 
                 pre = m;
                 m = m.suivant;
             }
 
-            mem.ajoutEnTete(new LigneAfficheur(ligneAct, info.colonne));
-            if (info != null) {
-                if (info.colonne < minMem)
-                    minMem = info.colonne;
+            if(!ensLigne.appartientListe(act))
+                ensLigne.ajoutEnTete(act);
+
+            //Formation de l'echelle
+            for(int i = minColonne; i <= maxColonne; i++){
+                if(i >= 0) echelle += "|+" + i;
+                else echelle += "|" + i;
             }
+            echelle = "_/" + echelle;
 
-            Maillon n = mem.tete;
+            //Affichage des resultats
+            Maillon t = ensLigne.tete;
+            Maillon preT = null;
 
-            while (n != null) {
-                LigneAfficheur l = (LigneAfficheur) n.info;
-                int decalage = Math.abs(minMem - l.minimum);
+            while(t != null){
+                String temp = t.info + "";
 
-                for (int i = 0; i < decalage; i++) {
-                    res += ".";
+                if(preT != null) {
+
+                    int decalage = Math.abs(((LigneAfficheur) t.info).ligne - ((LigneAfficheur) preT.info).ligne);
+
+                    if(decalage > 1){
+
+                        temp += "\n";
+
+                        for (int i = 1; i < decalage; i++) {
+                            if (i > 0) temp += "+" + (i + ((LigneAfficheur) t.info).ligne) + "|";
+                            else temp += (i+((LigneAfficheur) t.info).ligne) + "|";
+                        }
+                    }
                 }
 
-                res += l.contenu + "\n";
-                n = n.suivant;
+                res = temp + "\n" + res;
+
+                preT = t;
+                t = t.suivant;
             }
+
+            res = echelle + "\n" + res;
         }
 
         return res;

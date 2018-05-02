@@ -1,38 +1,8 @@
 import java.lang.Math;
-import java.util.Arrays;
 
 public class Generation {
 
-    private String regle;
-    private int[] regleSurvie;
-    private int[] regleNaissance;
-    LC<LC<Cellule>> genPreced = new LC<>();
-
-    public Generation(String valeur){
-        regle = valeur;
-
-        //Extraction des regles de valeur
-        String[] mem = regle.split("/");
-
-        int[] regleSurvie = new int[mem[0].length()];
-        for(int i = 0; i < mem[0].length(); i++) {
-            int res = mem[0].charAt(i);
-
-            if(res < 48 || res > 57) throw new IllegalArgumentException();
-            else
-                regleSurvie[i] = res - 48;
-        }
-        this.regleSurvie = regleSurvie;
-
-        int[] regleNaissance = new int[mem[1].length()];
-        for(int i = 0; i < mem[1].length(); i++)
-            regleNaissance[i] = Character.getNumericValue(mem[1].charAt(i));
-        this.regleNaissance = regleNaissance;
-    }
-
-    public void ajoutGenPreced(LC l){
-        genPreced.ajoutEnTete(l);
-    }
+    private LC<LC<Cellule>> genPreced = new LC<>();
 
     /**
      * Compte le nombre de cellule vivante autours de la cellule c
@@ -43,23 +13,23 @@ public class Generation {
      * @return le nombre de voisin
      */
 
-    public void comptageVoisins(LC l, Cellule c){
+    public void ComptageVoisins(LC<Cellule> l, Cellule c){
         int res = 0;
 
-        Maillon m = l.tete;
+        Maillon m = l.getTete();
         Cellule info = (Cellule)m.info;
 
         while(m!= null){
             if(m.info instanceof Cellule) {
-                if(c.colonne - info.colonne == 0){
-                    if((Math.abs(c.ligne - info.ligne)) == 1) {
+                if(c.getColonne() - info.getColonne() == 0){
+                    if((Math.abs(c.getLigne() - info.getLigne())) == 1) {
                         res++;
                     }
                 }
                 else{
-                    if(Math.abs(c.colonne - info.colonne) == 1){
+                    if(Math.abs(c.getColonne() - info.getColonne()) == 1){
 
-                        int dY = Math.abs(c.ligne - info.ligne);
+                        int dY = Math.abs(c.getLigne() - info.getLigne());
 
                         if(dY == 1 || dY == 0){
                             res++;
@@ -83,17 +53,17 @@ public class Generation {
      * @return l'ensemble des cellules existantes et de leurs voisins
      */
 
-    public LC neighbours (LC l){
+    public LC Neighbours (LC<Cellule> l){
         LC<Cellule> n = new LC<>();
-        Maillon m = l.tete;
+        Maillon m = l.getTete();
 
         while (m != null){
             Cellule cell = (Cellule)m.info;
 
             for(int i = -1; i <= 1; i++){
                 for(int j = -1; j <= 1; j++){
-                    Cellule neighbour = new Cellule(cell.colonne + i, cell.ligne + j);
-                    comptageVoisins(l, neighbour);
+                    Cellule neighbour = new Cellule(cell.getColonne() + i, cell.getLigne() + j);
+                    ComptageVoisins(l, neighbour);
 
                     if (i == 0 && j == 0) continue;
 
@@ -113,10 +83,10 @@ public class Generation {
      * @return la liste chainee correspondant a la generation suivante
      */
 
-    public LC nextGen (LC l){
+    public LC NextGen (LC<Cellule> l){
         LC<Cellule> res = new LC();
-        LC<Cellule> lEtVoisin = neighbours(l);
-        Maillon m = lEtVoisin.tete;
+        LC<Cellule> lEtVoisin = Neighbours(l);
+        Maillon m = lEtVoisin.getTete();
 
         while(m!= null){
             Cellule info = (Cellule)m.info;
@@ -146,23 +116,23 @@ public class Generation {
      * @return le nombre de voisin
      */
 
-    public void comptageVoisins(LC l, Cellule c, int[] CHG, int[] CBD){
+    public void ComptageVoisins(LC<Cellule> l, Cellule c, int[] CHG, int[] CBD){
         int res = 0;
 
-        Maillon m = l.tete;
+        Maillon m = l.getTete();
         Cellule info = (Cellule)m.info;
 
         while(m!= null){
             if(m.info instanceof Cellule) {
                 if(info.determineDansLimite(CHG,CBD)) {
-                    if (c.colonne - info.colonne == 0) {
-                        if ((Math.abs(c.ligne - info.ligne)) == 1) {
+                    if (c.getColonne() - info.getColonne() == 0) {
+                        if ((Math.abs(c.getLigne() - info.getLigne())) == 1) {
                             res++;
                         }
                     } else {
-                        if (Math.abs(c.colonne - info.colonne) == 1) {
+                        if (Math.abs(c.getColonne() - info.getColonne()) == 1) {
 
-                            int dY = Math.abs(c.ligne - info.ligne);
+                            int dY = Math.abs(c.getLigne() - info.getLigne());
 
                             if (dY == 1 || dY == 0) {
                                 res++;
@@ -190,9 +160,9 @@ public class Generation {
      * @return l'ensemble des cellules existantes et de leurs voisins
      */
 
-    public LC neighbours (LC l, int[] CHG, int[] CBD){
+    public LC Neighbours (LC l, int[] CHG, int[] CBD){
         LC<Cellule> n = new LC<>();
-        Maillon m = l.tete;
+        Maillon m = l.getTete();
 
         while (m != null){
             if(m.info instanceof Cellule) {
@@ -201,8 +171,8 @@ public class Generation {
                 if(cell.determineDansLimite(CHG,CBD)) {
                     for (int i = -1; i <= 1; i++) {
                         for (int j = -1; j <= 1; j++) {
-                            Cellule neighbour = new Cellule(cell.colonne + i, cell.ligne + j);
-                            comptageVoisins(l, neighbour, CHG, CBD);
+                            Cellule neighbour = new Cellule(cell.getColonne() + i, cell.getLigne() + j);
+                            ComptageVoisins(l, neighbour, CHG, CBD);
 
                             if (i == 0 && j == 0) continue;
 
@@ -227,11 +197,11 @@ public class Generation {
      * @return la liste chainee correspondant a la generation suivante
      */
 
-    public LC nextGen (LC l, int[] CHG, int[] CBD){
+    public LC NextGen (LC l, int[] CHG, int[] CBD){
         LC<Cellule> res = new LC();
-        LC<Cellule> lEtVoisin = neighbours(l,CHG,CBD);
+        LC<Cellule> lEtVoisin = Neighbours(l,CHG,CBD);
 
-        Maillon m = lEtVoisin.tete;
+        Maillon m = lEtVoisin.getTete();
 
         while(m!= null){
             Cellule info = (Cellule)m.info;
@@ -253,7 +223,7 @@ public class Generation {
      * Detecte les evolutions
      *
      * @param l la LC de la generation actuelle
-     * @return le resultat
+     * @return le string correspondant au resultat
      */
 
     public String detectionEvolution(LC l){
@@ -262,7 +232,7 @@ public class Generation {
         if(l.estListeVide()) return "Mort";
 
         if(!genPreced.estListeVide()) {
-            if (l.equal(genPreced.tete.info)) return "Stable";
+            if (l.equal(genPreced.getTete().info)) return "Stable";
         }
 
         return res;

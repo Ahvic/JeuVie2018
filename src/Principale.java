@@ -4,19 +4,24 @@ import java.awt.event.*;
 
 public class Principale {
 
-    private static LC liste = null;
+    private static LC<Cellule> liste = null;
 
     public static void main(String[] Args){
 
+        /*
         lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
         LC<Cellule> liste = lF.ConvertionFichier();
-        Generation g = new Generation("23/3");
+        Generation g = new Generation();
+        deroulementJeu(liste,g,10);
+        */
 
-        System.out.println(liste);
+        int a = 5;
+
+        System.out.println();
 
     }
 
-    public static void deroulementJeu(LC l, Generation g, final int LimiteGeneration){
+    public static void deroulementJeu(LC<Cellule> l, Generation g, final int LimiteGeneration){
 
         //Sert a modifier la valeur de liste dans la classe anonyme actionPerformed
         liste = l;
@@ -26,11 +31,10 @@ public class Principale {
         t.addActionListener(new ActionListener() {
             int nbGeneration = 0;
             public void actionPerformed(ActionEvent e) {
-                System.out.println(liste);
                 System.out.println(liste.affichageTableau());
-                int[] CHG = {-3,-3};
-                int[] CBD = {3,3};
-                liste = g.nextGen(liste,CHG,CBD);
+                int[] CHG = {0,0};
+                int[] CBD = {2,2};
+                liste = g.NextGen(liste);
                 //Detection etat stable
                 //Ajout de la generation dans genPreced de Generation
                 nbGeneration++;
