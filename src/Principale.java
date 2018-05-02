@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 public class Principale {
 
-<<<<<<< HEAD
+
     public static void main(String[] Args){
 
         //passer le dossier en parametre
@@ -14,7 +14,7 @@ public class Principale {
         String WorkingDirectory = System.getProperty("user.dir");
         if (Args[0].contains("-w")){
             HTML h = new HTML();
-            File htmlFile = new File(WorkingDirectory +"\\Raw.html");
+            File htmlFile = new File(WorkingDirectory +"\\TypeEvolution.html");
             try {
                 Desktop.getDesktop().browse(htmlFile.toURI());
             } catch (IOException e) {
@@ -38,10 +38,10 @@ public class Principale {
                 else {
                     if (Args[0].contains("-s")){
                         System.out.println(Args[1] + Args [2] + "sq");
-                        System.out.println(WorkingDirectory +"\\exemple lif\\"+ Args[2]);
+                        System.out.println(WorkingDirectory +"\\LIF\\"+ Args[2]);
                         int d = Integer.parseInt(Args[1]);
                         //simulation jeu de la vie
-                        lectureFichier LIF = new lectureFichier(WorkingDirectory +"\\exemple lif\\"+ Args[2]);
+                        lectureFichier LIF = new lectureFichier(WorkingDirectory +"\\LIF\\"+ Args[2]);
                         Generation g = new Generation(LIF.ExtractionRegle());
                         LC<Cellule> liste = LIF.ConvertionFichier();
                         Principale p = new Principale();
@@ -59,13 +59,14 @@ public class Principale {
             }
 
         }
+    }
+
+
 
 
         lectureFichier lF = new lectureFichier("C:\\Users\\Loic\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN - Original.LIF");
-=======
     private static LC liste = null;
->>>>>>> ce6ca789cc87ef5bcb3c735146a2518eaf3b4a06
-
+    /*
     public static void main(String[] Args){
 
         lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
@@ -73,7 +74,7 @@ public class Principale {
 
         LC<Cellule> liste = lF.ConvertionFichier();
 
-<<<<<<< HEAD
+
         /*
         while(true) {
             liste = g.nextGen(liste, g.neighbours(liste), 3);
@@ -95,13 +96,13 @@ public class Principale {
             System.out.println("~~~~~~~~");
         }
 
-        */
 
 
-=======
+
+
         deroulementJeu(liste, g, 10);
->>>>>>> ce6ca789cc87ef5bcb3c735146a2518eaf3b4a06
-    }
+
+    */
 
     public static void deroulementJeu(LC l, Generation g, final int LimiteGeneration){
 
@@ -117,11 +118,10 @@ public class Principale {
                 liste = g.nextGen(liste);
                 //Detection etat stable
                 //Ajout de la generation dans genPreced de Generation
-<<<<<<< HEAD
                 System.out.println(l.affichageTableau());
-=======
+
                 System.out.println(liste.affichageTableau());
->>>>>>> ce6ca789cc87ef5bcb3c735146a2518eaf3b4a06
+
                 nbGeneration++;
 
                 if(nbGeneration == LimiteGeneration) {
@@ -140,3 +140,4 @@ public class Principale {
         t.stop();
     }
 }
+

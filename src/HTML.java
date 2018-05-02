@@ -6,10 +6,10 @@ import java.io.FilenameFilter;
 public class HTML {
     String WorkingDirectory = System.getProperty("user.dir");
     String html = "<!DOCTYPE html><html lang=\"fr\"><head>\n<meta charset=\"utf-8\">\n<link rel=\"stylesheet\" href=\"style.css\">\n<title>page vide</title></head><body>" ;
-    File f = new File(WorkingDirectory+"\\Raw.html");
+    File f = new File(WorkingDirectory+"\\TypeEvolution.html");
     public String[] getFiles(){
         System.out.println("That's it :" + WorkingDirectory);
-        File folder = new File(WorkingDirectory +"\\exemple lif");
+        File folder = new File(WorkingDirectory +"\\LIF");
         System.out.println(folder.getAbsolutePath());
         File [] files = folder.listFiles(new FilenameFilter() {
             @Override
