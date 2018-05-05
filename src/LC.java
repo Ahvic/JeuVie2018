@@ -123,7 +123,7 @@ public class LC<T> {
         Maillon<T> p = l.tete;
 
         while(m != null){
-            if(m.info != p.info) return false;
+            if(!m.info.equals(p.suivant)) return false;
             m = m.suivant;
             p = p.suivant;
         }

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e51320ee-03a0-489e-be88-54fd797d760e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/exemple lif/ACORN.LIF" afterPath="$PROJECT_DIR$/exemple lif/ACORN.LIF" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LCTest.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/LCTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" />
-      <change beforePath="$PROJECT_DIR$/src/Cellule.java" afterPath="$PROJECT_DIR$/src/Cellule.java" />
-      <change beforePath="$PROJECT_DIR$/src/LCTest.java" afterPath="$PROJECT_DIR$/src/LCTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/Principale.java" afterPath="$PROJECT_DIR$/src/Principale.java" />
+      <change beforePath="$PROJECT_DIR$/src/LC.java" afterPath="$PROJECT_DIR$/src/LC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cellule.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cellule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cellule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -127,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LC.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2482">
-              <caret line="154" column="45" lean-forward="false" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
+            <state relative-caret-position="163">
+              <caret line="125" column="16" lean-forward="false" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -191,10 +182,10 @@
         <option value="$PROJECT_DIR$/src/PrincipaleTest.groovy" />
         <option value="$PROJECT_DIR$/src/LCTest.groovy" />
         <option value="$PROJECT_DIR$/src/Generation.java" />
-        <option value="$PROJECT_DIR$/src/LC.java" />
         <option value="$PROJECT_DIR$/src/LCTest.java" />
         <option value="$PROJECT_DIR$/src/Cellule.java" />
         <option value="$PROJECT_DIR$/src/Principale.java" />
+        <option value="$PROJECT_DIR$/src/LC.java" />
       </list>
     </option>
   </component>
@@ -1119,14 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2482">
-          <caret line="154" column="45" lean-forward="false" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LCTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1173,6 +1156,14 @@
             <element signature="e#2241#2242#0" expanded="true" />
             <element signature="e#2297#2298#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="125" column="16" lean-forward="false" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
