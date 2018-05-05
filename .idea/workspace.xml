@@ -3,45 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e51320ee-03a0-489e-be88-54fd797d760e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JeuVie2018.iml" afterPath="$PROJECT_DIR$/JeuVie2018.iml" />
       <change beforePath="$PROJECT_DIR$/exemple lif/ACORN.LIF" afterPath="$PROJECT_DIR$/exemple lif/ACORN.LIF" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.classpath" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/dictionaries/Antoine.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/encodings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/.project" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Cellule.class" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Generation.class.orig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/HTML$1.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/HTML$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/HTML.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/HTML.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/JeuDeLaVie.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/JeuVie2018.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LC.class.orig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LigneAfficheur.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/LigneAfficheur.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Note.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/LCTest.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/LCTest.class" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Principale.class.orig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Programme2$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/Programme2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/lectureFichier.class" afterPath="$PROJECT_DIR$/out/production/JeuVie2018/lectureFichier.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/out/production/JeuVie2018/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuVie2018/projet_jeu_de_la_vie.pdf" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/Cellule.java" afterPath="$PROJECT_DIR$/src/Cellule.java" />
-      <change beforePath="$PROJECT_DIR$/src/Generation.java" afterPath="$PROJECT_DIR$/src/Generation.java" />
-      <change beforePath="$PROJECT_DIR$/src/HTML.java" afterPath="$PROJECT_DIR$/src/HTML.java" />
-      <change beforePath="$PROJECT_DIR$/src/JeuDeLaVie.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/LC.java" afterPath="$PROJECT_DIR$/src/LC.java" />
-      <change beforePath="$PROJECT_DIR$/src/LigneAfficheur.java" afterPath="$PROJECT_DIR$/src/LigneAfficheur.java" />
+      <change beforePath="$PROJECT_DIR$/src/LCTest.java" afterPath="$PROJECT_DIR$/src/LCTest.java" />
       <change beforePath="$PROJECT_DIR$/src/Principale.java" afterPath="$PROJECT_DIR$/src/Principale.java" />
-      <change beforePath="$PROJECT_DIR$/src/lectureFichier.java" afterPath="$PROJECT_DIR$/src/lectureFichier.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Principale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="255">
+              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,7 +41,7 @@
       <file leaf-file-name="Generation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Generation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="1887">
               <caret line="118" column="42" lean-forward="false" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
               <folding>
                 <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
@@ -82,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cellule.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cellule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cellule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
               <folding>
                 <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
                 <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
@@ -95,7 +65,9 @@
                 <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
                 <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
                 <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-                <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+                <element signature="e#2070#2071#0" expanded="true" />
+                <element signature="e#2241#2242#0" expanded="true" />
+                <element signature="e#2297#2298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,21 +108,11 @@
       <file leaf-file-name="HTML.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HTML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="136">
               <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2924">
-              <caret line="180" column="44" lean-forward="false" selection-start-line="180" selection-start-column="44" selection-end-line="180" selection-end-column="44" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,15 +127,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2482">
+              <caret line="154" column="45" lean-forward="false" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LCTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LCTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+            <state relative-caret-position="493">
+              <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#113#114#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+                <element signature="method#testAjoutEnTete#0;class#LCTest#0" expanded="false" />
+                <element signature="method#testAjout#0;class#LCTest#0" expanded="false" />
+                <element signature="method#testGetTete#0;class#LCTest#0" expanded="false" />
+                <element signature="method#testEstListeVide#0;class#LCTest#0" expanded="false" />
+                <element signature="method#testAppartientListe#0;class#LCTest#0" expanded="false" />
+                <element signature="method#testEqual#0;class#LCTest#0" expanded="false" />
+                <element signature="method#testToString#0;class#LCTest#0" expanded="false" />
+                <element signature="method#testAffichageTableau#0;class#LCTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -205,24 +185,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cellule.java" />
         <option value="$PROJECT_DIR$/src/LigneAfficheur.java" />
         <option value="$PROJECT_DIR$/src/lectureFichier.java" />
         <option value="$PROJECT_DIR$/src/HTML.java" />
         <option value="$PROJECT_DIR$/src/PrincipaleTest.groovy" />
         <option value="$PROJECT_DIR$/src/LCTest.groovy" />
+        <option value="$PROJECT_DIR$/src/Generation.java" />
         <option value="$PROJECT_DIR$/src/LC.java" />
         <option value="$PROJECT_DIR$/src/LCTest.java" />
-        <option value="$PROJECT_DIR$/src/Generation.java" />
+        <option value="$PROJECT_DIR$/src/Cellule.java" />
         <option value="$PROJECT_DIR$/src/Principale.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2077" />
-    <option name="y" value="19" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="382" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -242,6 +222,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,15 +241,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="create.test.in.the.same.root" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -325,66 +309,6 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="LCTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JeuVie2018" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LCTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="LCTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JeuVie2018" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LCTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="LCTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JeuVie2018" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LCTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="LCTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JeuVie2018" />
@@ -414,6 +338,66 @@
       <option name="MAIN_CLASS_NAME" value="LCTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LCTest.testAppartientListe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" value="testAppartientListe" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LCTest.testEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" value="testEqual" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LCTest.testEstListeVide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JeuVie2018" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LCTest" />
+      <option name="METHOD_NAME" value="testEstListeVide" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -488,18 +472,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.LCTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LCTest (1)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LCTest (2)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LCTest (3)" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.LCTest (4)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LCTest (4)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LCTest.testAppartientListe" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LCTest.testEqual" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LCTest.testEstListeVide" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LCTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LCTest (4)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LCTest (3)" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LCTest (2)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LCTest (1)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LCTest.testEqual" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LCTest.testEstListeVide" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LCTest.testAppartientListe" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LCTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LCTest (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -523,39 +507,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LCTest - 2018.05.02 at 14h 39m 52s.xml">
+    <history-entry file="LCTest - 2018.05.03 at 14h 14m 41s.xml">
       <configuration name="LCTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 41m 20s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testAppartientListe - 2018.05.03 at 14h 17m 09s.xml">
+      <configuration name="LCTest.testAppartientListe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 45m 10s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testAppartientListe - 2018.05.03 at 14h 17m 21s.xml">
+      <configuration name="LCTest.testAppartientListe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 47m 07s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testAppartientListe - 2018.05.03 at 14h 17m 27s.xml">
+      <configuration name="LCTest.testAppartientListe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 52m 00s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testEqual - 2018.05.03 at 14h 19m 56s.xml">
+      <configuration name="LCTest.testEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 52m 11s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testEqual - 2018.05.03 at 14h 20m 29s.xml">
+      <configuration name="LCTest.testEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 53m 30s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testEqual - 2018.05.03 at 14h 24m 28s.xml">
+      <configuration name="LCTest.testEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 57m 15s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testEqual - 2018.05.03 at 14h 25m 18s.xml">
+      <configuration name="LCTest.testEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 57m 55s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testEqual - 2018.05.03 at 14h 35m 47s.xml">
+      <configuration name="LCTest.testEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LCTest - 2018.05.02 at 14h 59m 14s.xml">
-      <configuration name="LCTest" configurationId="JUnit" />
+    <history-entry file="LCTest_testEstListeVide - 2018.05.03 at 14h 22m 34s.xml">
+      <configuration name="LCTest.testEstListeVide" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="29" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -566,14 +550,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2757158" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21235955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19782609" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18511905" sideWeight="0.56348073" order="0" side_tool="true" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18511905" sideWeight="0.43651927" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14166667" sideWeight="0.59620595" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14166667" sideWeight="0.40379405" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -584,6 +567,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -592,7 +576,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -621,7 +605,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -697,7 +683,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -803,7 +791,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,7 +848,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -905,7 +897,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -940,7 +934,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -987,7 +983,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1026,7 +1024,9 @@
             <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
             <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
             <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1059,47 +1059,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JeuDeLaVie.java" />
-    <entry file="file://$PROJECT_DIR$/src/PrincipaleTest.groovy">
+    <entry file="file://$PROJECT_DIR$/src/PrincipaleTest.groovy" />
+    <entry file="file://$PROJECT_DIR$/src/LCTest.groovy" />
+    <entry file="file://$PROJECT_DIR$/src/Generation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LCTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="82" column="22" lean-forward="false" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
+        <state relative-caret-position="1887">
+          <caret line="118" column="42" lean-forward="false" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#113#114#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
+            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1134,7 +1103,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HTML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="136">
           <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1152,33 +1121,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="180" column="44" lean-forward="false" selection-start-line="180" selection-start-column="44" selection-end-line="180" selection-end-column="44" />
+        <state relative-caret-position="2482">
+          <caret line="154" column="45" lean-forward="false" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generation.java">
+    <entry file="file://$PROJECT_DIR$/src/LCTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="118" column="42" lean-forward="false" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
+        <state relative-caret-position="493">
+          <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
           <folding>
-            <element signature="docComment;method#ComptageVoisins#0;class#Generation#0" expanded="false" />
-            <element signature="docComment;method#detectionEvolution#0;class#Generation#0" expanded="false" />
-            <element signature="method#detectionEvolution#0;class#Generation#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="method#testAjoutEnTete#0;class#LCTest#0" expanded="false" />
+            <element signature="method#testAjout#0;class#LCTest#0" expanded="false" />
+            <element signature="method#testGetTete#0;class#LCTest#0" expanded="false" />
+            <element signature="method#testEstListeVide#0;class#LCTest#0" expanded="false" />
+            <element signature="method#testAppartientListe#0;class#LCTest#0" expanded="false" />
+            <element signature="method#testEqual#0;class#LCTest#0" expanded="false" />
+            <element signature="method#testToString#0;class#LCTest#0" expanded="false" />
+            <element signature="method#testAffichageTableau#0;class#LCTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cellule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+          <folding>
+            <element signature="method#Cellule#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getColonne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getLigne#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#getNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#setNbVoisin#0;class#Cellule#0" expanded="false" />
+            <element signature="docComment;method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="method#determineDansLimite#0;class#Cellule#0" expanded="false" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2297#2298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>HTML</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

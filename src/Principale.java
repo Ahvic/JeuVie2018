@@ -8,16 +8,14 @@ public class Principale {
 
     public static void main(String[] Args){
 
-        /*
         lectureFichier lF = new lectureFichier("C:\\Users\\Fixe\\Documents\\GitHub\\JeuVie2018\\exemple lif\\ACORN.LIF");
-        LC<Cellule> liste = lF.ConvertionFichier();
         Generation g = new Generation();
-        deroulementJeu(liste,g,10);
-        */
+        LC<Cellule> liste = lF.ConvertionFichier();
 
-        int a = 5;
+        Cellule c1 = new Cellule(1,1);
+        Cellule c2 = new Cellule(1,1);
 
-        System.out.println();
+        System.out.println(c1.equals(c2));
 
     }
 

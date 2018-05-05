@@ -70,6 +70,10 @@ public class Cellule {
         return colonne >= coinHautGauche[0] && ligne >= coinHautGauche[1] && colonne <= coinBasDroit[0] && ligne <= coinBasDroit[1];
     }
 
+    public boolean equals(Cellule c) {
+        return colonne == c.getColonne() && ligne == c.getLigne();
+    }
+
     /**
      * Renvoi les coordonnees de la cellule au format (colonne, ligne)
      *
