@@ -12,10 +12,16 @@ public class Principale {
         Generation g = new Generation();
         LC<Cellule> liste = lF.ConvertionFichier();
 
+        LC<Integer> l1 = new LC<>();
+        LC<Integer> l2 = new LC<>();
+
         Cellule c1 = new Cellule(1,1);
         Cellule c2 = new Cellule(1,1);
 
-        System.out.println(c1.equals(c2));
+        l1.ajout(10);
+        l2.ajout(1);
+
+        System.out.println(l1.equal(l2));
 
     }
 

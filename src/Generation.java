@@ -46,6 +46,10 @@ public class Generation {
         c.setNbVoisin(res);
     }
 
+    public void ajoutGenPreced(LC<Cellule> l){
+        genPreced.ajout(l);
+    }
+
     /**
      * Renvoi l'ensemble des cellules et de leurs voisins
      *
@@ -221,19 +225,47 @@ public class Generation {
 
     /**
      * Detecte les evolutions
+     * Appelle une fois qu'on a atteint la limite
      *
-     * @param l la LC de la generation actuelle
+     * @param nbLimite le nombre de generation
      * @return le string correspondant au resultat
      */
 
-    public String detectionEvolution(LC l){
+    public String detectionEvolution(int nbLimite){
         String res = "Pas d'evolution particuliere";
+        Maillon tete = genPreced.getTete();
+        LC<Cellule> l = (LC)tete.info;
 
         if(l.estListeVide()) return "Mort";
 
         if(!genPreced.estListeVide()) {
-            if (l.equal(genPreced.getTete().info)) return "Stable";
+            if (l.equal((LC)tete.info)) return "Stable";
+
+            Maillon g = genPreced.getTete();
+
+            while(g != null){
+                Maillon h = g.suivant;
+
+                while(h != null){
+
+                    if(g.equals(h)){
+                        int index = genPreced.getIndex((LC<Cellule>) h.info);
+                        int i = 1;
+
+                        for(i = 1; index * i <= nbLimite; i++){
+                            if(!genPreced.recupererElement(index * i).equal((LC<Cellule>) g.info))
+                                    break;
+                        }
+                    }
+
+                    h = h.suivant;
+                }
+
+                g = g.suivant;
+            }
         }
+
+
 
         return res;
     }

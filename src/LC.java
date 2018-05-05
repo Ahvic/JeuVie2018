@@ -112,6 +112,48 @@ public class LC<T> {
     }
 
     /**
+     * Sert a recuperer l'index de l'element x si ce dernier existe dans la liste chainee
+     * On commence a compter a zero
+     *
+     * @param x l'element a rechercher
+     * @return l'index de l'element
+     */
+
+    public int getIndex(T x){
+        int res = -1;
+
+        if(appartientListe(x)){
+            Maillon m = tete;
+            int i = 0;
+
+            while(m != null){
+                if(m.info.equals(x)) return i;
+
+                i++;
+                m = m.suivant;
+            }
+        }
+
+        return res;
+    }
+
+    public T recupererElement(int index){
+        T res = null;
+
+        int i = 0;
+        Maillon m = tete;
+
+        while(m != null){
+            if(i == index) return (T)m.info;
+
+            i++;
+            m = m.suivant;
+        }
+
+        return res;
+    }
+
+    /**
      * Verifie si deux LC sont egales
      *
      * @param l la LC a comparer
@@ -123,7 +165,18 @@ public class LC<T> {
         Maillon<T> p = l.tete;
 
         while(m != null){
-            if(!m.info.equals(p.suivant)) return false;
+            T infoM = m.info;
+            T infoP = p.info;
+
+            if(infoM instanceof Cellule && infoP instanceof Cellule){
+                Cellule iM = (Cellule)infoM;
+                Cellule iP = (Cellule)infoP;
+
+                if(!iM.equals(iP)) return false;
+            }else{
+                if(!infoM.equals(infoP)) return false;
+            }
+
             m = m.suivant;
             p = p.suivant;
         }
