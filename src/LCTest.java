@@ -121,15 +121,6 @@ public class LCTest extends TestCase {
     }
 
     @Test
-    public void testToString() {
-        LC<Integer> liste = new LC<>();
-        assertEquals("LC vide",liste.toString());
-
-        liste.ajoutEnTete(5);
-        assertEquals("5",liste.toString());
-    }
-
-    @Test
     public void testCopie(){
         LC<Integer> liste = new LC<>();
         liste.ajout(5);
