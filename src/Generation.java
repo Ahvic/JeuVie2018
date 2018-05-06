@@ -3,6 +3,8 @@ import java.lang.Math;
 public class Generation {
 
     private LC<LC<Cellule>> genPreced = new LC<>();
+    private Cellule[] firstGenMoveCell;
+    private UsefulData firstGendata;
 
     /**
      * Compte le nombre de cellule vivante autours de la cellule c
@@ -223,18 +225,112 @@ public class Generation {
      * Detecte les evolutions
      *
      * @param l la LC de la generation actuelle
+     * @param LimiteGeneration la nombre de generation a effectue
      * @return le string correspondant au resultat
      */
 
-    public String detectionEvolution(LC l){
-        String res = "Pas d'evolution particuliere";
+    public String detectionEvolution(LC<Cellule> l, final int LimiteGeneration) {
+        LC nextGeneration = new LC();
+        nextGeneration = l.copie();
+        nextGeneration = NextGen((nextGeneration));
 
-        if(l.estListeVide()) return "Mort";
+        LC CurrentGeneration = new LC();
+        LC NextGenerationForCompare = new LC();
+        CurrentGeneration = l.copie();
+        NextGenerationForCompare = nextGeneration.copie();
 
-        if(!genPreced.estListeVide()) {
-            if (l.equal(genPreced.getTete().info)) return "Stable";
+        int limite = 0;
+
+        if (l.estListeVide())
+            return "Mort";
+
+        if (CurrentGeneration.equal(NextGenerationForCompare)) {
+            Maillon<Cellule> elt = NextGenerationForCompare.getTete();
+            int queue = 0;
+            while (elt != null) {
+                queue++;
+                elt = elt.suivant;
+            }
+            return "Stable" + " " + "Cellule vivant:" + queue;
         }
 
-        return res;
+        while ((!CurrentGeneration.equal(NextGenerationForCompare))
+                && (limite < LimiteGeneration)) {
+            CurrentGeneration = NextGen(CurrentGeneration);
+            NextGenerationForCompare = NextGen(NextGenerationForCompare);
+            if (CurrentGeneration.equal(NextGenerationForCompare)) {
+                Maillon<Cellule> elt = NextGenerationForCompare.getTete();
+                int queue = 0;
+                while (elt != null) {
+                    queue++;
+                    elt = elt.suivant;
+                }
+                return "Stable" + " " + "Cellule vivant:" + queue;
+            }
+            limite++;
+        }
+
+        LC CurrentGenforOcsillateur = l.copie();
+
+        LC<Cellule>[] GenerationSave = new LC[10000];
+
+        for (int i = 0; i < LimiteGeneration; i++) {
+            GenerationSave[i] = CurrentGenforOcsillateur.copie();
+            CurrentGenforOcsillateur = NextGen(CurrentGenforOcsillateur);
+            CurrentGenforOcsillateur = NextGen(CurrentGenforOcsillateur);
+        }
+        LC CurrentGenForSpaceship = l.copie();
+        Maillon maillon = CurrentGenForSpaceship.getTete();
+        int length = 0;
+        while (maillon != null) {
+            length++;
+            maillon = maillon.suivant;
+        }
+        // firstGenMoveCell = new Cellule[length];
+        // maillon = CurrentGenForSpaceship.getTete();
+        // int i = 0;
+        // while (maillon!=null){
+        // firstGenMoveCell[i] = (Cellule) maillon.info;
+        // ++i;
+        // maillon = maillon.suivant;
+        // }
+        //firstGendata = LifeUtil.getUsefulData(CurrentGenForSpaceship);
+
+
+
+        for (int j = 0; j < LimiteGeneration; j++) {
+            for (int temps = 1; temps < LimiteGeneration - j; temps++) {
+                if (GenerationSave[j].equal(GenerationSave[j + temps])) {
+                    Maillon<Cellule> elt = GenerationSave[j + temps].getTete();
+                    int queue = 0;
+                    while (elt != null) {
+                        queue++;
+                        elt = elt.suivant;
+                    }
+                    return "Oscillateur" + " " + "periode:" + temps + " " + "Cellule vivant:" + queue;
+                }
+            }
+            if (j == 0) {
+                firstGendata = LifeUtil.getUsefulData(GenerationSave[j]);
+                firstGenMoveCell = LifeUtil.move(GenerationSave[j], firstGendata);
+            }
+            else {
+                UsefulData data = LifeUtil.getUsefulData(GenerationSave[j]);
+                Cellule[] movedCells = LifeUtil.move(GenerationSave[j], data);
+                boolean equals = LifeUtil.equal(firstGenMoveCell, movedCells);
+                if (equals) {
+                    int A;
+                    int B;
+                    A = firstGendata.getAddX() - data.getAddX();
+                    B = firstGendata.getAddY() - data.getAddY();
+                    int queue= data.getLCLength();
+                    return "Vaisseau"+" ,"+"Cellule vivant:"+queue+" ,"+"deplacement:"+"ligne:"+A+"colonne:"+B+" ,"+"periode:"+j;
+                }
+            }
+        }
+
+        // spaceship
+
+        return "Pas d'evolution particuliere";
     }
 }

@@ -123,12 +123,43 @@ public class LC<T> {
         Maillon<T> p = l.tete;
 
         while(m != null){
-            if(m.info != p.info) return false;
+            T infoM = m.info;
+            T infoP = p.info;
+
+            if(infoM instanceof Cellule && infoP instanceof Cellule){
+                Cellule iM = (Cellule)infoM;
+                Cellule iP = (Cellule)infoP;
+
+                if(!iM.equals(iP)) return false;
+            }else{
+                if(!infoM.equals(infoP)) return false;
+            }
+
             m = m.suivant;
             p = p.suivant;
         }
 
         return true;
+    }
+
+    /**
+     * Renvoi une copie de la liste chainee
+     *
+     * @return LC<Cellule> la copie
+     */
+
+    public LC<T> copie(){
+        LC<T> res = new LC();
+
+        Maillon m = tete;
+
+        while(m != null){
+            res.ajout((T)m.info);
+
+            m = m.suivant;
+        }
+
+        return res;
     }
 
     /**

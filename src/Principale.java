@@ -141,9 +141,6 @@ public class Principale {
                     liste = g.NextGen(l, CHG, CBD);
                 }
 
-                //Detection etat stable
-                //Ajout de la generation dans genPreced de Generation
-
                 System.out.println(l.affichageTableau());
 
                 System.out.println(liste.affichageTableau());

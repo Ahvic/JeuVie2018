@@ -130,6 +130,16 @@ public class LCTest extends TestCase {
     }
 
     @Test
+    public void testCopie(){
+        LC<Integer> liste = new LC<>();
+        liste.ajout(5);
+
+        LC<Integer> listeCopie = liste.copie();
+
+        assertEquals(true, liste.equal(listeCopie));
+    }
+
+    @Test
     public void testAffichageTableau() {
         LC<Integer> liste = new LC<>();
         assertEquals("LC vide",liste.affichageTableau());

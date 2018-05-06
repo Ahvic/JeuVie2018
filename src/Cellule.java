@@ -52,6 +52,18 @@ public class Cellule {
     }
 
     /**
+     * Determine si la cellule actuelle a les meme coorodnnees que la cellule passee en argument
+     *
+     * @param obj la cellule a comparer
+     * @return vrai si egal, faux sinon
+     */
+
+	@Override
+    public boolean equals(Object obj) {
+        return  colonne == ((Cellule)obj).getColonne() && ligne == ((Cellule)obj).getLigne();
+    }
+	
+    /**
      * Determine si la cellule est situe en dehors des limites du plateau
      * La limite a une forme rectangulaire
      * Tolere que la cellule soit sur place sur la limite
