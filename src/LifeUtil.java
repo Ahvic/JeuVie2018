@@ -27,7 +27,7 @@ public class LifeUtil {
                 break;
             }
             c = (Cellule) m.info;
-            // 获取左上方坐标 obtenir la position de haut-gauche
+            //obtenir la position de haut-gauche
             if (x > c.getColonne()) {
                 x = c.getColonne();
                 y = c.getLigne();
@@ -44,7 +44,7 @@ public class LifeUtil {
     }
 
     /**
-     * 获取平移后的细胞 obtenir les cellues apres translation
+     * obtenir les cellues apres translation
      * 
      * @return
      */
@@ -73,7 +73,7 @@ public class LifeUtil {
     }
 
     /**
-     * 比较平移后的坐标位置是否相等 comparer les positions equals ou pas
+     * comparer les positions equals ou pas
      * 
      * @return
      */

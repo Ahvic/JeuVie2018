@@ -240,10 +240,10 @@ public class Generation {
         NextGenerationForCompare = nextGeneration.copie();
 
         int limite = 0;
-
+        //le type mort
         if (l.estListeVide())
             return "Mort";
-
+        //le type stable
         if (CurrentGeneration.equal(NextGenerationForCompare)) {
             Maillon<Cellule> elt = NextGenerationForCompare.getTete();
             int queue = 0;
@@ -270,6 +270,7 @@ public class Generation {
             limite++;
         }
 
+        //le type oscillateur
         LC CurrentGenforOcsillateur = l.copie();
 
         LC<Cellule>[] GenerationSave = new LC[10000];
@@ -310,6 +311,8 @@ public class Generation {
                     return "Oscillateur" + " " + "periode:" + temps + " " + "Cellule vivant:" + queue;
                 }
             }
+
+            //le type vaisseau
             if (j == 0) {
                 firstGendata = LifeUtil.getUsefulData(GenerationSave[j]);
                 firstGenMoveCell = LifeUtil.move(GenerationSave[j], firstGendata);
