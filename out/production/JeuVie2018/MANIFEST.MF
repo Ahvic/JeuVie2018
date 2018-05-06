@@ -1,2 +1,2 @@
-Main-Class: JeuDeLaVie
+Main-Class: Principale
 Class-Path:

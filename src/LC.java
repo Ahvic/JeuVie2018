@@ -132,39 +132,6 @@ public class LC<T> {
     }
 
     /**
-     * Renvoi le contenu de la liste chainee sous forme de string
-     *
-     * @return
-     */
-        /*
-        public String toString(){
-        String s = "";
-
-        if(estListeVide()) return "LC vide";
-
-        Maillon<T> m = tete;
-
-        while(m != null){
-
-            T info = m.info;
-
-            if(info instanceof Cellule){
-                s += info.toString();
-            }
-            else{
-                if (info instanceof Integer){
-                    s += Integer.toString((int)info);
-                }else
-                    s +=  info.toString() + "\n";
-            }
-
-            m = m.suivant;
-        }
-
-        return s;
-    }
-    */
-    /**
      * Affiche la liste chainee sous la forme d'un tableau
      * Parcours la liste chainee une seule fois
      *
